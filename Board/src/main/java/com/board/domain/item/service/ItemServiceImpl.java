@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.board.domain.item.Item;
 import com.board.domain.item.dto.ItemInfoDto;
 import com.board.domain.item.dto.ItemSaveDto;
-import com.board.domain.item.exception.ItemExcepTionType;
+import com.board.domain.item.exception.ItemExceptionType;
 import com.board.domain.item.exception.ItemException;
 import com.board.domain.item.repository.ItemRepository;
 import com.board.domain.member.Member;
@@ -33,7 +33,7 @@ public class ItemServiceImpl implements ItemService{
 	@Override
 	public ItemInfoDto getInfo(Long id) {
 		// TODO Auto-generated method stub
-		Item item = itemRepository.getInfo(id).orElseThrow(()->new ItemException(ItemExcepTionType.WRONG_ITEM));
+		Item item = itemRepository.getInfo(id).orElseThrow(()->new ItemException(ItemExceptionType.WRONG_ITEM));
 		ItemInfoDto itemInfo = new ItemInfoDto(item,item.getFileLists());
 		return itemInfo;
 	}
@@ -60,7 +60,7 @@ public class ItemServiceImpl implements ItemService{
 		// TODO Auto-generated method stub
 		Item item;
 		if(itemSaveDto.getId()!=null) {
-		    Item existingItem = itemRepository.findById(itemSaveDto.getId()).orElseThrow(()-> new ItemException(ItemExcepTionType.WRONG_ITEM));
+		    Item existingItem = itemRepository.findById(itemSaveDto.getId()).orElseThrow(()-> new ItemException(ItemExceptionType.WRONG_ITEM));
 		    existingItem.update(itemSaveDto.getName(), itemSaveDto.getPrice(),itemSaveDto.getStock(),itemSaveDto.getDetail());
 		    item = existingItem;
 		} else {

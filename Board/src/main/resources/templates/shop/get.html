@@ -50,7 +50,12 @@
 </table>
 </div>
 <div >
-
+    <form id="addToCartForm">
+        <select id="quantity" name="quantity">
+            <option th:each="option : ${#numbers.sequence(1, item.stock)}" th:value="${option}" th:text="${option}"></option>
+        </select>
+	<button type="button" onclick="addCartItem()">장바구니에 담기</button>
+    </form>
 
 <div style="float:left">
 <button type="button" onclick="goBack()" class="btn btn-secondary">목록</button>
@@ -129,6 +134,27 @@ $(function () {
 	
 function goBack(){
 	window.history.back();
+}
+
+function addCartItem(){
+	var ItemId = parseInt([[${item.id}]]);
+	var quantity = $("#quantity").val();
+	$.ajax({
+		method: "POST",
+		url:"/cartItem/add",
+		data:{
+			ItemId : ItemId,
+			count : quantity
+		},
+		success: function(data){
+			alert(data);
+			window.location.replace("http://14.47.220.34:8081/home");
+		},
+		error: function(request,status,error) {
+	    	  alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	    	  console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	      }		
+	});
 }
 
 

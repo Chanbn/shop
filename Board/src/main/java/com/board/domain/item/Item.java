@@ -50,6 +50,7 @@ public class Item extends BaseTimeEntity
 		this.detail = detail;
 	}
 	
+	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "seller_id")
 	private Member seller;

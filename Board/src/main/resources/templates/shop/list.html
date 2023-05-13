@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+
+<div th:replace="/fragments/header.html :: fragment-header"></div>
+<!-- <script src="https://code.jquery.com/jquery.min.js"></script>
+ -->
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<meta name="_csrf" th:content="${_csrf.token}"/>
+	<!-- default header name is X-CSRF-TOKEN -->
+	<meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+	<!-- ... -->
+</head>
+<body>
+	  <div th:replace="/fragments/nav.html :: fragment-nav"></div>
+	
+	  
+<h1 sec:authorize="hasRole('USER')">You do not have user role.</h1>
+<h1 sec:authorize="hasRole('ADMIN')">Has admin Role</h1>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    정렬 순서
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="/shop/list?selectSort=createdDate&orderSort=DESC">신상품순</a></li>
+    <li><a class="dropdown-item" href="/shop/list?selectSort=price&orderSort=ASC">낮은가격순</a></li>
+    <li><a class="dropdown-item" href="/shop/list?selectSort=price&orderSort=DESC">높은가격순</a></li>
+  </ul>
+</div>
+
+	  
+	   <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th>이미지</th>
+          <th>상품명</th>
+          <th>가격</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr th:each="itemList : ${itemList}">
+          <td><a th:href="@{'/shop/get?id='+${itemList.id}}">
+	<img th:src="@{'/shop/getImage/' + ${itemList.fileLists[0].saveName} + '?uploadDate=' + ${itemList.fileLists[0].createdDate}}" alt="Image" width="100" height="100" />
+          </a></td>
+          <td th:text="${itemList.name}"></td>
+          <td th:text="${itemList.price}"></td>
+        </tr>
+      </tbody>
+    </table>
+	  
+
+<div>
+<button sec:authorize="hasRole('ADMIN')" onClick="postDelete()" class="btn btn-danger">삭제</button>
+</div>
+<!-- <form  th:attr="action=@{/board/list?}">
+<select th:name="type" th:value="${type}">
+	<option th:value="'T'" th:selected="${type}=='T'" th:text="제목"></option>
+	<option th:value="'C'" th:selected="${type}=='C'" th:text="내용"></option>
+	<option th:value="'W'" th:selected="${type}=='W'" th:text="작성자"></option>
+	<option th:value="'TC'" th:selected="${type}=='TC'" th:text="제목or내용"></option>
+</select>
+<fieldset>
+    <input type="text" name="word" th:value="${word}" />
+    <input type="submit" th:attr="value=확인"/>
+    <input type="hidden" name="page" th:value="1">
+  </fieldset>
+</form> -->
+
+
+ <a th:href="@{'/shop/write'}" type="button" class="btn btn-primary" style="float:right">글쓰기</a>
+
+<nav aria-label="...">
+  <ul class="pagination justify-content-center">
+
+    <li class="page-item" th:classappend="${prev==true ? '' : 'disabled'}">
+    	<a class="page-link" th:href="@{/shop/list(page=${startpage-1},type=${type},word=${word})}">
+Previous</a>
+    </li>
+    <th:block th:each="num : ${#numbers.sequence(startpage,endpage)}">
+    <li class="page-item" th:classappend="${page+1 == num ? 'active':''}">
+
+    <a class="page-link" th:href="@{/shop/list(page=${num},type=${type},word=${word})}"><text th:text="${num}"></a>
+    
+    </li>
+	</th:block>
+
+    <li th:if="${next}" class="page-item" >
+    	<a class="page-link" th:href="@{/shop/list(page=${endpage+1},type=${type},word=${word})}">
+Next</a>
+    </li>
+  </ul>
+</nav>
+
+</body>
+<script th:inline="javascript">
+
+
+
+    var msg = /*[[${msg}]]*/;
+    
+    if(msg === '삭제되었습니다.') {
+        alert("삭제되었습니다.");
+    }
+    
+  
+    
+	function postDelete(){
+
+		    const selectedIdx = [];
+		    let isChecked = false;
+			  const checkboxes = document.getElementsByName('selectedIdx');
+			    if (selectedIdx.length === 0) {
+			    	  alert('선택된 체크박스가 없습니다.');
+			    	  return false;
+			    	}
+			  for (let i = 0; i < checkboxes.length; i++) {
+    			if (checkboxes[i].checked) {
+			      selectedIdx.push(checkboxes[i].value);
+			      isChecked = true;
+    				}
+  					}
+  console.log(selectedIdx); // 선택된 체크박스의 값들을 콘솔에 출력
+  // 이후 선택된 체크박스들의 값을 서버로 전송하는 코드를 작성
+if(isChecked){
+	alert("삭제할 항목을 선택해주세요.");
+	return false;
+}
+  $.ajax({
+	 method : "PUT",
+	 contentType: 'application/json',
+	    data: JSON.stringify({
+	        "itemId": selectedIdx
+	      }),
+	 url : "/shop/manage/list",
+	    beforeSend: function(xhr) {
+	        var token = $("meta[name='_csrf']").attr("content");
+	        var header = $("meta[name='_csrf_header']").attr("content");
+	        xhr.setRequestHeader(header, token);
+	    },
+	 success: function(data){
+			alert(data);
+			/* window.location.replace("http://14.47.220.34:8081/board/"+category+"/list"); */
+		},
+		error: function(request,status,error) {
+	    	  alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	    	  console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	      }
+  });
+		  
+	}
+
+    
+</script>
+
+</html>

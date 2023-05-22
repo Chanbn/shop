@@ -18,7 +18,7 @@
   <thead>
     <tr>
       <th colspan="3" scope="col">
-      <span th:text="${item.name}"></span>
+      <span th:text="${item.itemname}"></span>
       </th>
     </tr>
   </thead>
@@ -50,13 +50,20 @@
 </table>
 </div>
 <div >
-    <form id="addToCartForm">
-        <select id="quantity" name="quantity">
+    <form id="addToCartForm" action="/order/form" method="GET">
+        <select id="count" name="count">
             <option th:each="option : ${#numbers.sequence(1, item.stock)}" th:value="${option}" th:text="${option}"></option>
         </select>
 	<button type="button" onclick="addCartItem()">장바구니에 담기</button>
+	<input type="hidden" name="id" id="id" th:value="${item.id}">	
+		<input type="hidden" name="itemname" id="itemname" th:value="${item.itemname}">	
+	<input type="hidden" name="price" id="price" th:value="${item.price}">
+		<input type="hidden" name="fileName" id="fileName" th:value="${item.fileLists[0].saveName}">
+		<input type="hidden" name="createdDate" id="createdDate" th:value="${item.fileLists[0].createdDate}">		
+		<input type="hidden" name="stock" id="stock" th:value="${item.stock}">
+	<button type="submit" >주문</button>
     </form>
-
+    
 <div style="float:left">
 <button type="button" onclick="goBack()" class="btn btn-secondary">목록</button>
 </div>
@@ -148,7 +155,7 @@ function addCartItem(){
 		},
 		success: function(data){
 			alert(data);
-			window.location.replace("http://14.47.220.34:8081/home");
+			window.location.replace("http://localhost:8081/cart/list");
 		},
 		error: function(request,status,error) {
 	    	  alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
@@ -157,6 +164,33 @@ function addCartItem(){
 	});
 }
 
+function orderItem(){
+	var ItemId = parseInt([[${item.id}]]);
+	var count = $("#quantity").val();
+	var ItemPrice = parseInt([[${item.price}]]);
+	var ItemName = [[${item.itemname}]];
+	
+	var orderDto = [{
+	        itemId: ItemId,
+	        count: count,
+	        itemname: ItemName,
+	        price: ItemPrice,
+	    }];
+	
+	$.ajax({
+		method: "POST",
+		url:"/order/form",
+		contentType: "application/json",
+		data:JSON.stringify(orderDto),
+		success: function(data){
+
+		},
+		error: function(request,status,error) {
+	    	  alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	    	  console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	      }
+		});
+}
 
 
 

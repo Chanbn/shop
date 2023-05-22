@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import com.board.exception.BaseExceptionType;
 
 public enum ItemExceptionType implements BaseExceptionType {
+	NOT_ENOUGH_ITEM(802,HttpStatus.FORBIDDEN, "상품의 재고가 부족합니다."),
 	WRONG_ITEM(801,HttpStatus.NOT_FOUND, "존재하지 않는 아이템입니다.");
 	
 	private int errorCode;

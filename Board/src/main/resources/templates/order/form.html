@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+	<meta name="_csrf" th:content="${_csrf.token}"/>
+	<!-- default header name is X-CSRF-TOKEN -->
+	<meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+	<!-- ... -->
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div th:replace="/fragments/header.html :: fragment-header"></div>
+  <div th:replace="/fragments/nav.html :: fragment-nav"></div>
+<h1 sec:authorize="!hasRole('user')">You do not have user role.</h1>
+<h1 sec:authorize="hasRole('user')">Has admin Role</h1>
+<body>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>상품번호</th>
+            <th>이미지</th>
+            <th>상품명</th>
+            <th>가격</th>
+            <th>수량</th>
+			<th>취소</th>
+        </tr>
+    </thead>
+    <tbody>
+<!-- 
+            <tr th:each="row : ${orderInfo}">
+            <td><span th:text="${row.id}"></span></td>
+            <td>
+                <a th:href="@{'/shop/get?id=' + ${row.id}}">
+                    <img class="order-image" th:src="@{'/shop/getImage/' + ${row.fileName} + '?uploadDate=' + ${row.createdDate}}" alt="Image" width="100" height="100" />
+                </a>
+            </td>
+            <td><span th:text="${row.itemname}"></span></td>
+            <td><span th:text="${row.price}"></span></td>
+            <td>
+                <select id="count" name="count">
+                    <option th:each="option : ${#numbers.sequence(1, row.stock)}" th:value="${option}" th:text="${option}" th:selected="${option == row.count}"></option>
+                </select> 
+            </td>
+            <td>
+                <button type="button" id="deleteRow">삭제</button>
+            </td>
+        </tr> -->
+    
+
+            <tr class="data-row" th:if="${not #lists.isEmpty(orderInfo)}" th:each="row, status: ${orderInfo}">
+                <td><span id="id" th:text="${row.id}"></span>
+					<input type="hidden" id="createdDate" name="createdDate" th:value="${row.createdDate}">
+                    <input type="hidden" id="fileName" name="fileName" th:value="${row.fileName}">
+                    <input type="hidden" name="id" th:value="${row.id}">
+					<input type="hidden" name="itemname" th:value="${row.itemname}">
+					<input type="hidden" name="price" th:value="${row.price}">
+                </td>
+                <td>
+                <a th:href="@{'/shop/get?id=' + ${row.id}}">
+                <img class="order-image" th:src="@{'/shop/getImage/' + ${row.fileName} + '?uploadDate=' + ${row.createdDate}}" alt="Image" width="100" height="100" />
+                </a>
+                </td>
+                <td><span id="itemname" th:text="${row.itemname}"></span></td>
+                <td><span id="price" th:text="${row.price}"></span></td>
+           		<td>
+				<select id="count" name="count">
+    			<option th:each="option : ${#numbers.sequence(1, row.stock)}" th:value="${option}" th:text="${option}" th:selected="${option == row.count}"></option>
+				</select> 
+				</td>
+				<td>
+				<button type="button" id="deleteRow">삭제</button>
+				</td>
+            </tr>
+    </tbody>
+</table>
+<table>
+	<thead>		
+	<tr>
+	<th><div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" onclick="changeDelivery('newAddress')">
+  <label class="form-check-label" for="flexRadioDefault1">
+    새로운 배송지
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked onclick="changeDelivery('existingAddress')">
+  <label class="form-check-label" for="flexRadioDefault2">
+    기존 배송지
+  </label>
+</div></th>
+	</tr>
+			<tr>
+			 <th>이름</th>
+            <th>주소</th>
+            <th>핸드폰번호</th>
+            <th><button type="button" onclick="setAddress()">기존 배송지변경</button></th>
+            </tr>
+	</thead>
+	<tbody>
+			<tr>
+			<td><input type="text" id="deliveryName" name="name"></td>
+			<td><input type="text" id="deliveryAddress" name="address"></td>
+			<td><input type="text" id="deliveryHp" name="hp" pattern="[0-9]{11}" placeholder="01012345678"></td>
+			</tr>
+	</tbody>
+</table>
+	<button type="submit" onclick="payment()" >결제하기</button>
+
+<div>
+	<span id="totalPay"></span>
+</div>
+	
+
+</body>
+
+
+<script th:inline="javascript">
+$(function () {
+	totalPay();
+	getAddress();
+});
+function totalPay(){
+	 var totalPay = 0; 
+    $('.data-row').each(function() {
+        var id = $(this).find('span[id^="id"]').text();
+        var count = $(this).find('select').val();
+        var price = $(this).find('span[id^="price"]').text();
+        var name = $(this).find('span[id^="name"]').text();
+        var fileName = $(this).find('input[id^="fileName"]').val();
+        var createdDate = $(this).find('input[id^="createdDate"]').val();
+        var deliveryName = $(this).find('input[id^="deliveryName"]').val();
+        var deliveryAddress = $(this).find('input[id^="deliveryAddress"]').val();
+        var deliveryHp = $(this).find('input[id^="deliveryHp"]').val();
+
+        var data = {
+            id: id,
+            count: count,
+            price: price,
+            name: name,
+            fileName: fileName,
+            createdDate: createdDate
+        };
+        totalPay += parseInt(count) * parseFloat(price);
+    });
+
+    $('#totalPay').text(totalPay);
+}
+
+function payment(){
+	var orderInfo = [];
+	var token = $("meta[name='_csrf']").attr("content");
+	var header = $("meta[name='_csrf_header']").attr("content");
+    $('.data-row').each(function() {
+        var id = $(this).find('span[id^="id"]').text();
+        var count = $(this).find('select').val();
+        var price = $(this).find('span[id^="price"]').text();
+        var name = $(this).find('span[id^="itemname"]').text();
+        var fileName = $(this).find('input[id^="fileName"]').val();
+        var createdDate = $(this).find('input[id^="createdDate"]').val();
+       
+        var order ={
+        	    id: id,
+        	    count: count,
+        	    itemname: name,
+        	    count: count,
+        	    price: price,
+         	    fileName: fileName,
+        	    createdDate: createdDate       
+        	    };
+        orderInfo.push(order);
+
+    });
+    var deliveryName = $('#deliveryName').val();
+    var deliveryAddress = $('#deliveryAddress').val();
+    var deliveryHp = $('#deliveryHp').val();
+    
+    var orderData = {
+    	    name: deliveryName,
+			address: deliveryAddress,
+			hp :deliveryHp 
+    };
+
+    
+	$.ajax({
+		method: "POST",
+		url: "/order/submit",
+		data: JSON.stringify({        
+		    orderInfo: orderInfo,
+		    addressDto: orderData
+		}),
+		headers: { 'X-CSRF-TOKEN': token },
+		contentType: 'application/json',
+		success: function(data){
+			window.location.replace("http://localhost:8081/order/result?orderid="+data);
+		},
+		error: function(request,status,error) {
+	    	  alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	    	  console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	      }
+	});	
+} 
+
+
+
+$(document).on("click", "#deleteRow", function(e){
+	 var tr = this.closest("tr");
+	  tr.remove();
+	  totalPay();
+});
+
+
+function changeDelivery(option){
+	
+	if(option==='newAddress')
+		{
+	    document.getElementById('deliveryName').value = '';
+	    document.getElementById('deliveryAddress').value = '';
+	    document.getElementById('deliveryHp').value = '';
+		}
+	else if(option==='existingAddress')
+		{
+		addressSet();
+		}
+}
+
+function getAddress(){
+	$.ajax({
+		method: "GET",
+		url: "/order/address",
+		success: function(data){
+		    document.getElementById('deliveryName').value = data.name;
+		    document.getElementById('deliveryAddress').value = data.address;
+		    document.getElementById('deliveryHp').value = data.hp;
+		},
+		error: function(request,status,error) {
+	    	  alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	    	  console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	      }
+	});		
+}
+
+function setAddress(){
+	var name = $("#deliveryName").val();
+	var address = $("#deliveryAddress").val();
+	var hp = $("#deliveryHp").val();
+	var token = $("meta[name='_csrf']").attr("content");
+	var header = $("meta[name='_csrf_header']").attr("content");
+	
+	$.ajax({
+		method: "POST",
+		url: "/order/address",
+		contentType: "application/json",
+		data:JSON.stringify({			
+			name : name,
+			address : address,
+			hp : hp	}),
+		headers: { 'X-CSRF-TOKEN': token },
+		success: function(data){
+		alert(data);
+		},
+		error: function(request,status,error) {
+	    	  alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	    	  console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+	      }
+	});
+}
+</script>
+</html>

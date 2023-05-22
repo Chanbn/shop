@@ -44,7 +44,7 @@
           <td><a th:href="@{'/shop/get?id='+${itemList.id}}">
 	<img th:src="@{'/shop/getImage/' + ${itemList.fileLists[0].saveName} + '?uploadDate=' + ${itemList.fileLists[0].createdDate}}" alt="Image" width="100" height="100" />
           </a></td>
-          <td th:text="${itemList.name}"></td>
+          <td th:text="${itemList.itemname}"></td>
           <td th:text="${itemList.price}"></td>
         </tr>
       </tbody>

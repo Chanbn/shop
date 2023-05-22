@@ -15,6 +15,8 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.board.domain.BaseTimeEntity;
+import com.board.domain.item.exception.ItemException;
+import com.board.domain.item.exception.ItemExceptionType;
 import com.board.domain.member.Member;
 import com.board.file.Item.itemFile;
 
@@ -36,15 +38,15 @@ public class Item extends BaseTimeEntity
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	private String name;
+	private String itemname;
 	private Long price;
 	private Long stock;
 	private String isSoldOut;
 	private String detail;
 	
 	@Builder
-	public Item(String name, Long price, Long stock, String detail) {
-		this.name = name;
+	public Item(String itemname, Long price, Long stock, String detail) {
+		this.itemname = itemname;
 		this.price = price;
 		this.stock = stock;
 		this.detail = detail;
@@ -63,8 +65,8 @@ public class Item extends BaseTimeEntity
 		files.setItem(this);
 	}
 	
-	public void update(String name, Long price, Long stock, String detail) {
-		this.name = name;
+	public void update(String itemname, Long price, Long stock, String detail) {
+		this.itemname = itemname;
 		this.price = price;
 		this.stock = stock;
 		this.detail = detail;
@@ -75,4 +77,14 @@ public class Item extends BaseTimeEntity
 	public void setSeller(Member seller) {
 		this.seller = seller;
 	}
+	
+    public void removeStock(Long stock) {
+        Long restStock = this.stock - stock;
+        if (restStock < 0) {
+            throw new ItemException(ItemExceptionType.WRONG_ITEM);
+        }
+        this.stock = restStock;
+    }
+
+    
 }

@@ -68,9 +68,11 @@ public class ItemController {
 	@GetMapping(value = "getImage/{imagename}", produces = MediaType.IMAGE_JPEG_VALUE)
 	public ResponseEntity<byte[]> userSearch(@PathVariable("imagename") String imagename,@RequestParam("uploadDate") String uploadDate) throws IOException {
 		String uploadDateStr = uploadDate.split("\\.")[0];
+		log.info("uploadDate?? "+uploadDate);
 		LocalDateTime date = LocalDateTime.parse(uploadDateStr, DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss"));
 	    String formattedDate = date.format(DateTimeFormatter.ofPattern("yy/MM/dd"));
 	    String result = formattedDate.replace("/", ""); 
+	    log.info("이미지네임"+imagename);
 		InputStream imageStream = new FileInputStream("D://SpringBootProject/upload/"+result+"/" + imagename);
 		byte[] imageByteArray = IOUtils.toByteArray(imageStream);
 		imageStream.close();

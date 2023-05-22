@@ -26,7 +26,7 @@
     <tr>
       <th colspan="3" scope="col">
       <label for="title" style="font-weight:bolder;">상품명</label>
-      <input type="text" th:field="*{name}" id="name" name="name" placeholder="상품명을 입력하세요." required="required">
+      <input type="text" th:field="*{itemname}" id="name" name="itemname" placeholder="상품명을 입력하세요." required="required">
       </th>      
     </tr>
     
@@ -187,14 +187,14 @@
 	
 	
 	function submit_button(){
-		const name = document.getElementById("name").value;
+		const name = document.getElementById("itemname").value;
 		const detail = document.getElementById("detail").value;
 		const price = document.getElementById("price").value;
 		const stock = document.getElementById("stock").value;
 		const fileDivs = $('div[data-name="fileDiv"]');
 		const sendingData = new FormData();
 		const files=[];
-		sendingData.append('name',name);
+		sendingData.append('itemname',name);
 		sendingData.append('detail',detail);
 		sendingData.append('price',price);
 		sendingData.append('stock',stock);

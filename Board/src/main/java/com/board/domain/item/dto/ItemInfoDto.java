@@ -16,7 +16,7 @@ import lombok.Setter;
 public class ItemInfoDto {
 
 	private Long id;
-	private String name;
+	private String itemname;
 	private Long price;
 	private Long stock;
 	private String isSoldout;
@@ -32,7 +32,7 @@ public class ItemInfoDto {
 	
 	public ItemInfoDto(Item item,List<itemFile> fileLists) {
 		this.id = item.getId();
-		this.name = item.getName();
+		this.itemname = item.getItemname();
 		this.price = item.getPrice();
 		this.stock = item.getStock();
 		this.isSoldout = item.getIsSoldOut();

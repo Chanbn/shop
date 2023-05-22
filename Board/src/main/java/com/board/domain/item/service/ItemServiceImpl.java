@@ -46,7 +46,7 @@ public class ItemServiceImpl implements ItemService{
 			pageList = itemRepository.findBySellerAndIsSoldOut(pageable,word,"N").map(item -> new ItemInfoDto(item,item.getFileLists()));
 			break;
 		case "name":
-			pageList = itemRepository.findByNameAndIsSoldOut(pageable,word,"N").map(item -> new ItemInfoDto(item,item.getFileLists()));
+			pageList = itemRepository.findByItemnameAndIsSoldOut(word,"N",pageable).map(item -> new ItemInfoDto(item,item.getFileLists()));
 			break;
 		default:
 			pageList = itemRepository.findAllByIsSoldOut(pageable,"N").map(item -> new ItemInfoDto(item,item.getFileLists()));
@@ -61,7 +61,7 @@ public class ItemServiceImpl implements ItemService{
 		Item item;
 		if(itemSaveDto.getId()!=null) {
 		    Item existingItem = itemRepository.findById(itemSaveDto.getId()).orElseThrow(()-> new ItemException(ItemExceptionType.WRONG_ITEM));
-		    existingItem.update(itemSaveDto.getName(), itemSaveDto.getPrice(),itemSaveDto.getStock(),itemSaveDto.getDetail());
+		    existingItem.update(itemSaveDto.getItemname(), itemSaveDto.getPrice(),itemSaveDto.getStock(),itemSaveDto.getDetail());
 		    item = existingItem;
 		} else {
 		    item = itemSaveDto.toEntity();

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+	<meta name="_csrf" th:content="${_csrf.token}"/>
+	<!-- default header name is X-CSRF-TOKEN -->
+	<meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+	<!-- ... -->
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div th:replace="/fragments/header.html :: fragment-header"></div>
+  <div th:replace="/fragments/nav.html :: fragment-nav"></div>
+<h1 sec:authorize="!hasRole('user')">You do not have user role.</h1>
+<h1 sec:authorize="hasRole('user')">Has admin Role</h1>
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>상품번호</th>
+            <th>이미지</th>
+            <th>상품명</th>
+            <th>주문가격</th>
+            <th>주문수량</th>
+        </tr>
+    </thead>
+    <tbody>
+
+            <tr class="data-row" th:if="${not #lists.isEmpty(order.orderItems)}" th:each="row, status: ${order.orderItems}">
+                <td><span id="id" th:text="${row.id}"></span></td>
+                <td>
+                <a th:href="@{'/shop/get?id=' + ${row.id}}">
+                <img class="order-image" th:src="@{'/shop/getImage/' + ${row.fileName} + '?uploadDate=' + ${row.createdDate}}" alt="Image" width="100" height="100" />
+                </a>
+                </td>
+                <td><span id="name" th:text="${row.item.itemname}"></span></td>
+                <td><span id="price" th:text="${row.orderPrice}"></span></td>
+           		<td><span id="count" th:text="${row.count}"></span>
+<!-- 				<select id="count" name="${row.item.count}">
+    			<option th:each="option : ${#numbers.sequence(1, item.stock)}" th:value="${option}" th:text="${option}" th:selected="${option == row.count}"></option>
+				</select>  -->
+				</td>
+            </tr>
+    </tbody>
+</table>
+
+<table>
+	<thead>		
+	<tr>
+	<th>배송지 정보</th>
+	</tr>
+			<tr>
+			 <th>이름</th>
+            <th>주소</th>
+            <th>핸드폰번호</th>
+            </tr>
+	</thead>
+	<tbody>
+			<tr>
+			<td><span id="name" th:text="${order.deliveryName}"></span></td>
+			<td><span id="address" th:text="${order.deliveryAddress}"></span></td>
+			<td><span id="hp" th:text="${order.deliveryHp}" ></span></td>
+			</tr>
+	</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>주문금액</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<th><span id="totalPrice" th:text="${totalPrice}"></span></th>
+</tr>
+</tbody>
+</table>
+
+</body>
+
+
+<script th:inline="javascript">
+
+</script>
+</html>

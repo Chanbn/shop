@@ -95,7 +95,7 @@ public class Post extends BaseTimeEntity {
 	
     public void confirmWriter(Member writer) {
     	this.writer = writer;
-    	writer.addPost(this);
+//    	writer.addPost(this);
     }
     
     public void setWriter(Member writer) {

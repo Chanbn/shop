@@ -2,6 +2,7 @@ package com.board.domain.cart.controller;
 
 import java.util.List;
 
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,6 +22,7 @@ public class CartController {
 	private final CartService cartService;
 	@GetMapping("/list")
 	public void getList(Model model) {
+
 		List<CartItem> item =cartService.getList();
 		model.addAttribute("itemList", item);
 	}

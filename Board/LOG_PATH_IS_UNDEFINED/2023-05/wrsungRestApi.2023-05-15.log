@@ -1,0 +1,314 @@
+2023-05-15 23:18:58.941 INFO  [main] [com.board.BoardApplication] - main...
+2023-05-15 23:18:59.818 INFO  [restartedMain] [com.board.BoardApplication] - main...
+2023-05-15 23:19:01.353 INFO  [background-preinit] [o.h.validator.internal.util.Version] - HV000001: Hibernate Validator 6.2.2.Final
+2023-05-15 23:19:01.364 INFO  [restartedMain] [com.board.BoardApplication] - Starting BoardApplication using Java 17.0.1 on LAPTOP-CPNP3N15 with PID 231400 (D:\study\study\Board\bin\main started by SAMSUNG in D:\study\study\Board)
+2023-05-15 23:19:01.366 INFO  [restartedMain] [com.board.BoardApplication] - The following 1 profile is active: "oauth"
+2023-05-15 23:19:01.552 INFO  [restartedMain] [o.s.boot.devtools.restart.ChangeableUrls] - The Class-Path manifest attribute in C:\Gradle\gradle-7.4-all\gradle-7.4\caches\modules-2\files-2.1\com.oracle.database.jdbc\ojdbc8\21.3.0.0\73649ab9bfb94daa4df21b80c98ac35aea4aa2f5\ojdbc8-21.3.0.0.jar referenced one or more files that do not exist: file:/C:/Gradle/gradle-7.4-all/gradle-7.4/caches/modules-2/files-2.1/com.oracle.database.jdbc/ojdbc8/21.3.0.0/73649ab9bfb94daa4df21b80c98ac35aea4aa2f5/oraclepki.jar
+2023-05-15 23:19:01.556 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-05-15 23:19:01.556 INFO  [restartedMain] [o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor] - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-05-15 23:19:05.212 INFO  [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-15 23:19:05.849 INFO  [restartedMain] [o.s.d.r.c.RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 610 ms. Found 10 JPA repository interfaces.
+2023-05-15 23:19:06.560 WARN  [restartedMain] [o.m.spring.mapper.ClassPathMapperScanner] - No MyBatis mapper was found in '[com.board]' package. Please check your configuration.
+2023-05-15 23:19:09.283 INFO  [restartedMain] [o.s.b.w.embedded.tomcat.TomcatWebServer] - Tomcat initialized with port(s): 8081 (http)
+2023-05-15 23:19:09.320 INFO  [restartedMain] [o.apache.coyote.http11.Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8081"]
+2023-05-15 23:19:09.321 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Starting service [Tomcat]
+2023-05-15 23:19:09.322 INFO  [restartedMain] [org.apache.catalina.core.StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2023-05-15 23:19:10.080 INFO  [restartedMain] [o.a.c.c.C.[Tomcat].[localhost].[/]] - Initializing Spring embedded WebApplicationContext
+2023-05-15 23:19:10.081 INFO  [restartedMain] [o.s.b.w.s.c.ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 8523 ms
+2023-05-15 23:19:10.326 INFO  [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Starting...
+2023-05-15 23:19:11.386 INFO  [restartedMain] [jdbc.connection] - 1. Connection opened
+2023-05-15 23:19:11.387 INFO  [restartedMain] [jdbc.audit] - 1. Connection.new Connection returned 
+2023-05-15 23:19:11.387 INFO  [restartedMain] [jdbc.audit] - 1. Connection.getNetworkTimeout() returned 0
+2023-05-15 23:19:11.387 INFO  [restartedMain] [jdbc.audit] - 1. Connection.isReadOnly() returned false
+2023-05-15 23:19:11.387 INFO  [restartedMain] [jdbc.audit] - 1. Connection.getAutoCommit() returned true
+2023-05-15 23:19:11.391 INFO  [restartedMain] [jdbc.audit] - 1. Connection.isValid(1) returned true
+2023-05-15 23:19:11.392 INFO  [restartedMain] [jdbc.audit] - 1. Connection.getTransactionIsolation() returned 2
+2023-05-15 23:19:11.396 INFO  [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Start completed.
+2023-05-15 23:19:11.402 INFO  [restartedMain] [jdbc.audit] - 1. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@17c1d69b
+2023-05-15 23:19:11.418 INFO  [restartedMain] [jdbc.audit] - 1. Connection.clearWarnings() returned 
+2023-05-15 23:19:11.419 INFO  [restartedMain] [o.s.b.a.h2.H2ConsoleAutoConfiguration] - H2 console available at '/h2-console'. Database available at 'jdbc:oracle:thin:@localhost:1521:xe'
+2023-05-15 23:19:11.715 INFO  [HikariPool-1 connection adder] [jdbc.connection] - 2. Connection opened
+2023-05-15 23:19:11.716 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 2. Connection.new Connection returned 
+2023-05-15 23:19:11.716 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 2. Connection.isReadOnly() returned false
+2023-05-15 23:19:11.717 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 2. Connection.getAutoCommit() returned true
+2023-05-15 23:19:12.184 INFO  [HikariPool-1 connection adder] [jdbc.connection] - 3. Connection opened
+2023-05-15 23:19:12.184 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 3. Connection.new Connection returned 
+2023-05-15 23:19:12.185 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 3. Connection.isReadOnly() returned false
+2023-05-15 23:19:12.185 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 3. Connection.getAutoCommit() returned true
+2023-05-15 23:19:15.105 INFO  [HikariPool-1 connection adder] [jdbc.connection] - 4. Connection opened
+2023-05-15 23:19:15.106 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 4. Connection.new Connection returned 
+2023-05-15 23:19:15.106 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 4. Connection.isReadOnly() returned false
+2023-05-15 23:19:15.106 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 4. Connection.getAutoCommit() returned true
+2023-05-15 23:19:15.177 INFO  [HikariPool-1 connection adder] [jdbc.connection] - 5. Connection opened
+2023-05-15 23:19:15.177 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 5. Connection.new Connection returned 
+2023-05-15 23:19:15.177 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 5. Connection.isReadOnly() returned false
+2023-05-15 23:19:15.178 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 5. Connection.getAutoCommit() returned true
+2023-05-15 23:19:15.190 INFO  [restartedMain] [o.hibernate.jpa.internal.util.LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-15 23:19:15.255 INFO  [HikariPool-1 connection adder] [jdbc.connection] - 6. Connection opened
+2023-05-15 23:19:15.255 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 6. Connection.new Connection returned 
+2023-05-15 23:19:15.255 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 6. Connection.isReadOnly() returned false
+2023-05-15 23:19:15.255 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 6. Connection.getAutoCommit() returned true
+2023-05-15 23:19:15.329 INFO  [HikariPool-1 connection adder] [jdbc.connection] - 7. Connection opened
+2023-05-15 23:19:15.330 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 7. Connection.new Connection returned 
+2023-05-15 23:19:15.330 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 7. Connection.isReadOnly() returned false
+2023-05-15 23:19:15.330 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 7. Connection.getAutoCommit() returned true
+2023-05-15 23:19:15.352 INFO  [restartedMain] [org.hibernate.Version] - HHH000412: Hibernate ORM core version 5.6.5.Final
+2023-05-15 23:19:15.418 INFO  [HikariPool-1 connection adder] [jdbc.connection] - 8. Connection opened
+2023-05-15 23:19:15.418 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 8. Connection.new Connection returned 
+2023-05-15 23:19:15.419 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 8. Connection.isReadOnly() returned false
+2023-05-15 23:19:15.419 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 8. Connection.getAutoCommit() returned true
+2023-05-15 23:19:15.489 INFO  [HikariPool-1 connection adder] [jdbc.connection] - 9. Connection opened
+2023-05-15 23:19:15.489 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 9. Connection.new Connection returned 
+2023-05-15 23:19:15.490 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 9. Connection.isReadOnly() returned false
+2023-05-15 23:19:15.490 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 9. Connection.getAutoCommit() returned true
+2023-05-15 23:19:15.566 INFO  [HikariPool-1 connection adder] [jdbc.connection] - 10. Connection opened
+2023-05-15 23:19:15.568 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 10. Connection.new Connection returned 
+2023-05-15 23:19:15.568 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 10. Connection.isReadOnly() returned false
+2023-05-15 23:19:15.568 INFO  [HikariPool-1 connection adder] [jdbc.audit] - 10. Connection.getAutoCommit() returned true
+2023-05-15 23:19:15.851 INFO  [restartedMain] [org.hibernate.annotations.common.Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-05-15 23:19:16.213 INFO  [restartedMain] [jdbc.audit] - 1. Connection.isValid(5) returned true
+2023-05-15 23:19:16.213 INFO  [restartedMain] [jdbc.audit] - 1. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@17c1d69b
+2023-05-15 23:19:16.240 INFO  [restartedMain] [org.hibernate.dialect.Dialect] - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2023-05-15 23:19:16.269 INFO  [restartedMain] [jdbc.audit] - 1. Connection.getCatalog() returned null
+2023-05-15 23:19:16.557 INFO  [restartedMain] [jdbc.audit] - 1. Connection.getSchema() returned CHAN
+2023-05-15 23:19:16.558 INFO  [restartedMain] [jdbc.audit] - 1. Connection.getSchema() returned CHAN
+2023-05-15 23:19:16.572 INFO  [restartedMain] [jdbc.audit] - 1. Connection.getMetaData() returned oracle.jdbc.driver.OracleDatabaseMetaData@17c1d69b
+2023-05-15 23:19:16.601 INFO  [restartedMain] [jdbc.audit] - 1. Connection.createClob() returned oracle.sql.CLOB@5760138e
+2023-05-15 23:19:16.602 INFO  [restartedMain] [jdbc.audit] - 1. Connection.clearWarnings() returned 
+2023-05-15 23:19:16.972 ERROR [restartedMain] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Failed to initialize JPA EntityManagerFactory: @OneToOne or @ManyToOne on com.board.domain.order.Order.items references an unknown entity: java.util.List
+2023-05-15 23:19:16.972 WARN  [restartedMain] [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.board.domain.order.Order.items references an unknown entity: java.util.List
+2023-05-15 23:19:16.977 INFO  [restartedMain] [jdbc.audit] - 1. Statement.new Statement returned 
+2023-05-15 23:19:16.977 INFO  [restartedMain] [jdbc.audit] - 1. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@587cc6cc
+2023-05-15 23:19:16.980 INFO  [restartedMain] [jdbc.sqlonly] - SHUTDOWN
+
+2023-05-15 23:19:16.989 ERROR [restartedMain] [jdbc.audit] - 1. Statement.execute(SHUTDOWN) SHUTDOWN
+
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1151)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:771)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:498)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:112)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1011)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1531)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1311)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2163)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2118)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.execute(StatementSpy.java:923)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.lambda$new$1(DevToolsDataSourceAutoConfiguration.java:140)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.shutdown(DevToolsDataSourceAutoConfiguration.java:159)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor.destroy(DevToolsDataSourceAutoConfiguration.java:105)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:596)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.board.BoardApplication.main(BoardApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 38 common frames omitted
+2023-05-15 23:19:16.990 ERROR [restartedMain] [jdbc.sqlonly] - 1. Statement.execute(SHUTDOWN) SHUTDOWN
+
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1151)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:771)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:498)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:112)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1011)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1531)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1311)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2163)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2118)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.execute(StatementSpy.java:923)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.lambda$new$1(DevToolsDataSourceAutoConfiguration.java:140)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.shutdown(DevToolsDataSourceAutoConfiguration.java:159)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor.destroy(DevToolsDataSourceAutoConfiguration.java:105)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:596)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.board.BoardApplication.main(BoardApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 38 common frames omitted
+2023-05-15 23:19:16.991 ERROR [restartedMain] [jdbc.sqltiming] - 1. Statement.execute(SHUTDOWN) FAILED! SHUTDOWN
+ {FAILED after 6 msec}
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1151)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:771)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:498)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:112)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1011)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1531)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1311)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2163)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2118)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.execute(StatementSpy.java:923)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.lambda$new$1(DevToolsDataSourceAutoConfiguration.java:140)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.shutdown(DevToolsDataSourceAutoConfiguration.java:159)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor.destroy(DevToolsDataSourceAutoConfiguration.java:105)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:596)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.board.BoardApplication.main(BoardApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 38 common frames omitted
+2023-05-15 23:19:16.992 INFO  [restartedMain] [jdbc.audit] - 1. Statement.close() returned 
+2023-05-15 23:19:16.993 INFO  [restartedMain] [jdbc.audit] - 1. Connection.clearWarnings() returned 
+2023-05-15 23:19:16.993 WARN  [restartedMain] [o.s.b.f.support.DisposableBeanAdapter] - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+2023-05-15 23:19:16.993 INFO  [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown initiated...
+2023-05-15 23:19:17.001 INFO  [HikariPool-1 connection closer] [jdbc.connection] - 1. Connection closed
+2023-05-15 23:19:17.001 INFO  [HikariPool-1 connection closer] [jdbc.audit] - 1. Connection.close() returned 
+2023-05-15 23:19:17.002 INFO  [HikariPool-1 connection closer] [jdbc.connection] - 2. Connection closed
+2023-05-15 23:19:17.003 INFO  [HikariPool-1 connection closer] [jdbc.audit] - 2. Connection.close() returned 
+2023-05-15 23:19:17.004 INFO  [HikariPool-1 connection closer] [jdbc.connection] - 3. Connection closed
+2023-05-15 23:19:17.004 INFO  [HikariPool-1 connection closer] [jdbc.audit] - 3. Connection.close() returned 
+2023-05-15 23:19:17.006 INFO  [HikariPool-1 connection closer] [jdbc.connection] - 4. Connection closed
+2023-05-15 23:19:17.006 INFO  [HikariPool-1 connection closer] [jdbc.audit] - 4. Connection.close() returned 
+2023-05-15 23:19:17.009 INFO  [HikariPool-1 connection closer] [jdbc.connection] - 5. Connection closed
+2023-05-15 23:19:17.010 INFO  [HikariPool-1 connection closer] [jdbc.audit] - 5. Connection.close() returned 
+2023-05-15 23:19:17.013 INFO  [HikariPool-1 connection closer] [jdbc.connection] - 6. Connection closed
+2023-05-15 23:19:17.013 INFO  [HikariPool-1 connection closer] [jdbc.audit] - 6. Connection.close() returned 
+2023-05-15 23:19:17.016 INFO  [HikariPool-1 connection closer] [jdbc.connection] - 7. Connection closed
+2023-05-15 23:19:17.016 INFO  [HikariPool-1 connection closer] [jdbc.audit] - 7. Connection.close() returned 
+2023-05-15 23:19:17.018 INFO  [HikariPool-1 connection closer] [jdbc.connection] - 8. Connection closed
+2023-05-15 23:19:17.018 INFO  [HikariPool-1 connection closer] [jdbc.audit] - 8. Connection.close() returned 
+2023-05-15 23:19:17.019 INFO  [HikariPool-1 connection closer] [jdbc.connection] - 9. Connection closed
+2023-05-15 23:19:17.020 INFO  [HikariPool-1 connection closer] [jdbc.audit] - 9. Connection.close() returned 
+2023-05-15 23:19:17.022 INFO  [HikariPool-1 connection closer] [jdbc.connection] - 10. Connection closed
+2023-05-15 23:19:17.022 INFO  [HikariPool-1 connection closer] [jdbc.audit] - 10. Connection.close() returned 
+2023-05-15 23:19:17.023 INFO  [restartedMain] [com.zaxxer.hikari.HikariDataSource] - HikariPool-1 - Shutdown completed.
+2023-05-15 23:19:17.029 INFO  [restartedMain] [org.apache.catalina.core.StandardService] - Stopping service [Tomcat]
+2023-05-15 23:19:17.065 WARN  [restartedMain] [o.a.c.loader.WebappClassLoaderBase] - The web application [ROOT] appears to have started a thread named [oracle.jdbc.driver.BlockSource.ThreadedCachingBlockSource.BlockReleaser] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ app//oracle.jdbc.internal.Monitor$WaitableMonitor.monitorWait(Monitor.java:259)
+ app//oracle.jdbc.internal.Monitor$WaitableMonitor.monitorWait(Monitor.java:241)
+ app//oracle.jdbc.driver.BlockSource$ThreadedCachingBlockSource$BlockReleaser.run(BlockSource.java:346)
+2023-05-15 23:19:17.066 WARN  [restartedMain] [o.a.c.loader.WebappClassLoaderBase] - The web application [ROOT] appears to have started a thread named [InterruptTimer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/java.lang.Object.wait(Native Method)
+ java.base@17.0.1/java.util.TimerThread.mainLoop(Timer.java:563)
+ java.base@17.0.1/java.util.TimerThread.run(Timer.java:516)
+2023-05-15 23:19:17.067 WARN  [restartedMain] [o.a.c.loader.WebappClassLoaderBase] - The web application [ROOT] appears to have started a thread named [OJDBC-WORKER-THREAD-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.1/java.util.concurrent.SynchronousQueue$TransferStack.transfer(SynchronousQueue.java:401)
+ java.base@17.0.1/java.util.concurrent.SynchronousQueue.poll(SynchronousQueue.java:903)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1061)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.1/java.lang.Thread.run(Thread.java:833)
+2023-05-15 23:19:17.094 INFO  [restartedMain] [o.s.b.a.l.ConditionEvaluationReportLoggingListener] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-05-15 23:19:17.155 ERROR [restartedMain] [o.springframework.boot.SpringApplication] - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.board.domain.order.Order.items references an unknown entity: java.util.List
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301)
+	at com.board.BoardApplication.main(BoardApplication.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: @OneToOne or @ManyToOne on com.board.domain.order.Order.items references an unknown entity: java.util.List
+	at org.hibernate.cfg.ToOneFkSecondPass.doSecondPass(ToOneFkSecondPass.java:100)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processEndOfQueue(InFlightMetadataCollectorImpl.java:1750)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processFkSecondPassesInOrder(InFlightMetadataCollectorImpl.java:1694)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.processSecondPasses(InFlightMetadataCollectorImpl.java:1623)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:295)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 21 common frames omitted

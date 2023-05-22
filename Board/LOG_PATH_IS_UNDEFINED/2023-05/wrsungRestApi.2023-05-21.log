@@ -1,0 +1,751 @@
+2023-05-21 00:11:48.875 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 343. Connection closed
+2023-05-21 00:11:48.878 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 343. Connection.close() returned 
+2023-05-21 00:11:48.908 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 348. Connection opened
+2023-05-21 00:11:48.909 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 348. Connection.new Connection returned 
+2023-05-21 00:11:48.909 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 348. Connection.isReadOnly() returned false
+2023-05-21 00:11:48.909 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 348. Connection.getAutoCommit() returned true
+2023-05-21 00:11:53.596 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 346. Connection closed
+2023-05-21 00:11:53.597 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 346. Connection.close() returned 
+2023-05-21 00:11:53.609 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 339. Connection closed
+2023-05-21 00:11:53.610 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 339. Connection.close() returned 
+2023-05-21 00:11:53.676 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 349. Connection opened
+2023-05-21 00:11:53.676 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 349. Connection.new Connection returned 
+2023-05-21 00:11:53.676 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 349. Connection.isReadOnly() returned false
+2023-05-21 00:11:53.676 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 349. Connection.getAutoCommit() returned true
+2023-05-21 00:11:53.716 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 350. Connection opened
+2023-05-21 00:11:53.717 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 350. Connection.new Connection returned 
+2023-05-21 00:11:53.717 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 350. Connection.isReadOnly() returned false
+2023-05-21 00:11:53.717 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 350. Connection.getAutoCommit() returned true
+2023-05-21 00:12:01.099 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 340. Connection closed
+2023-05-21 00:12:01.099 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 340. Connection.close() returned 
+2023-05-21 00:12:01.199 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 351. Connection opened
+2023-05-21 00:12:01.199 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 351. Connection.new Connection returned 
+2023-05-21 00:12:01.199 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 351. Connection.isReadOnly() returned false
+2023-05-21 00:12:01.199 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 351. Connection.getAutoCommit() returned true
+2023-05-21 00:12:02.800 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 338. Connection closed
+2023-05-21 00:12:02.800 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 338. Connection.close() returned 
+2023-05-21 00:12:02.831 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 352. Connection opened
+2023-05-21 00:12:02.832 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 352. Connection.new Connection returned 
+2023-05-21 00:12:02.832 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 352. Connection.isReadOnly() returned false
+2023-05-21 00:12:02.832 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 352. Connection.getAutoCommit() returned true
+2023-05-21 00:12:07.428 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 341. Connection closed
+2023-05-21 00:12:07.428 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 341. Connection.close() returned 
+2023-05-21 00:12:07.497 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 353. Connection opened
+2023-05-21 00:12:07.497 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 353. Connection.new Connection returned 
+2023-05-21 00:12:07.497 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 353. Connection.isReadOnly() returned false
+2023-05-21 00:12:07.497 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 353. Connection.getAutoCommit() returned true
+2023-05-21 00:12:10.915 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 344. Connection closed
+2023-05-21 00:12:10.916 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 344. Connection.close() returned 
+2023-05-21 00:12:10.992 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 354. Connection opened
+2023-05-21 00:12:10.992 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 354. Connection.new Connection returned 
+2023-05-21 00:12:10.992 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 354. Connection.isReadOnly() returned false
+2023-05-21 00:12:10.992 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 354. Connection.getAutoCommit() returned true
+2023-05-21 00:12:19.702 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 342. Connection closed
+2023-05-21 00:12:19.702 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 342. Connection.close() returned 
+2023-05-21 00:12:19.788 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 355. Connection opened
+2023-05-21 00:12:19.788 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 355. Connection.new Connection returned 
+2023-05-21 00:12:19.788 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 355. Connection.isReadOnly() returned false
+2023-05-21 00:12:19.788 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 355. Connection.getAutoCommit() returned true
+2023-05-21 00:12:23.047 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 345. Connection closed
+2023-05-21 00:12:23.047 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 345. Connection.close() returned 
+2023-05-21 00:12:23.104 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 356. Connection opened
+2023-05-21 00:12:23.104 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 356. Connection.new Connection returned 
+2023-05-21 00:12:23.104 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 356. Connection.isReadOnly() returned false
+2023-05-21 00:12:23.104 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 356. Connection.getAutoCommit() returned true
+2023-05-21 00:12:24.202 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 347. Connection closed
+2023-05-21 00:12:24.203 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 347. Connection.close() returned 
+2023-05-21 00:12:24.287 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 357. Connection opened
+2023-05-21 00:12:24.287 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 357. Connection.new Connection returned 
+2023-05-21 00:12:24.287 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 357. Connection.isReadOnly() returned false
+2023-05-21 00:12:24.287 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 357. Connection.getAutoCommit() returned true
+2023-05-21 03:27:57.787 WARN  [HikariPool-32 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-32 - Thread starvation or clock leap detected (housekeeper delta=3h29s765ms140µs500ns).
+2023-05-21 03:27:57.911 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 349. Connection closed
+2023-05-21 03:27:57.911 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 349. Connection.close() returned 
+2023-05-21 03:27:57.912 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 350. Connection closed
+2023-05-21 03:27:57.912 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 350. Connection.close() returned 
+2023-05-21 03:27:57.914 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 351. Connection closed
+2023-05-21 03:27:57.914 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 351. Connection.close() returned 
+2023-05-21 03:27:57.915 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 348. Connection closed
+2023-05-21 03:27:57.915 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 348. Connection.close() returned 
+2023-05-21 03:27:57.918 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 354. Connection closed
+2023-05-21 03:27:57.918 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 354. Connection.close() returned 
+2023-05-21 03:27:57.919 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 355. Connection closed
+2023-05-21 03:27:57.919 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 355. Connection.close() returned 
+2023-05-21 03:27:57.921 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 353. Connection closed
+2023-05-21 03:27:57.921 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 353. Connection.close() returned 
+2023-05-21 03:27:57.923 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 352. Connection closed
+2023-05-21 03:27:57.923 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 352. Connection.close() returned 
+2023-05-21 03:27:57.925 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 356. Connection closed
+2023-05-21 03:27:57.925 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 356. Connection.close() returned 
+2023-05-21 03:27:57.927 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 357. Connection closed
+2023-05-21 03:27:57.927 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 357. Connection.close() returned 
+2023-05-21 03:27:58.353 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 358. Connection opened
+2023-05-21 03:27:58.353 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 358. Connection.new Connection returned 
+2023-05-21 03:27:58.353 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 358. Connection.isReadOnly() returned false
+2023-05-21 03:27:58.353 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 358. Connection.getAutoCommit() returned true
+2023-05-21 03:27:59.005 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 359. Connection opened
+2023-05-21 03:27:59.006 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 359. Connection.new Connection returned 
+2023-05-21 03:27:59.006 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 359. Connection.isReadOnly() returned false
+2023-05-21 03:27:59.006 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 359. Connection.getAutoCommit() returned true
+2023-05-21 03:27:59.435 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 360. Connection opened
+2023-05-21 03:27:59.435 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 360. Connection.new Connection returned 
+2023-05-21 03:27:59.435 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 360. Connection.isReadOnly() returned false
+2023-05-21 03:27:59.435 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 360. Connection.getAutoCommit() returned true
+2023-05-21 03:28:00.471 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 361. Connection opened
+2023-05-21 03:28:00.471 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 361. Connection.new Connection returned 
+2023-05-21 03:28:00.471 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 361. Connection.isReadOnly() returned false
+2023-05-21 03:28:00.471 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 361. Connection.getAutoCommit() returned true
+2023-05-21 03:28:01.125 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 362. Connection opened
+2023-05-21 03:28:01.125 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 362. Connection.new Connection returned 
+2023-05-21 03:28:01.125 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 362. Connection.isReadOnly() returned false
+2023-05-21 03:28:01.125 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 362. Connection.getAutoCommit() returned true
+2023-05-21 03:28:01.738 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 363. Connection opened
+2023-05-21 03:28:01.738 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 363. Connection.new Connection returned 
+2023-05-21 03:28:01.738 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 363. Connection.isReadOnly() returned false
+2023-05-21 03:28:01.738 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 363. Connection.getAutoCommit() returned true
+2023-05-21 03:28:02.541 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 364. Connection opened
+2023-05-21 03:28:02.541 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 364. Connection.new Connection returned 
+2023-05-21 03:28:02.541 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 364. Connection.isReadOnly() returned false
+2023-05-21 03:28:02.541 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 364. Connection.getAutoCommit() returned true
+2023-05-21 03:28:03.464 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 365. Connection opened
+2023-05-21 03:28:03.464 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 365. Connection.new Connection returned 
+2023-05-21 03:28:03.464 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 365. Connection.isReadOnly() returned false
+2023-05-21 03:28:03.464 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 365. Connection.getAutoCommit() returned true
+2023-05-21 03:28:03.826 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 366. Connection opened
+2023-05-21 03:28:03.826 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 366. Connection.new Connection returned 
+2023-05-21 03:28:03.826 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 366. Connection.isReadOnly() returned false
+2023-05-21 03:28:03.826 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 366. Connection.getAutoCommit() returned true
+2023-05-21 03:28:04.168 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 367. Connection opened
+2023-05-21 03:28:04.168 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 367. Connection.new Connection returned 
+2023-05-21 03:28:04.168 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 367. Connection.isReadOnly() returned false
+2023-05-21 03:28:04.168 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 367. Connection.getAutoCommit() returned true
+2023-05-21 11:02:14.628 WARN  [HikariPool-32 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-32 - Thread starvation or clock leap detected (housekeeper delta=7h34m27s457ms232µs200ns).
+2023-05-21 11:02:14.797 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 360. Connection closed
+2023-05-21 11:02:14.797 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 360. Connection.close() returned 
+2023-05-21 11:02:14.802 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 364. Connection closed
+2023-05-21 11:02:14.802 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 364. Connection.close() returned 
+2023-05-21 11:02:14.807 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 367. Connection closed
+2023-05-21 11:02:14.807 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 367. Connection.close() returned 
+2023-05-21 11:02:14.813 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 363. Connection closed
+2023-05-21 11:02:14.813 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 363. Connection.close() returned 
+2023-05-21 11:02:14.816 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 358. Connection closed
+2023-05-21 11:02:14.817 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 358. Connection.close() returned 
+2023-05-21 11:02:14.824 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 362. Connection closed
+2023-05-21 11:02:14.824 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 362. Connection.close() returned 
+2023-05-21 11:02:14.826 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 361. Connection closed
+2023-05-21 11:02:14.826 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 361. Connection.close() returned 
+2023-05-21 11:02:14.828 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 359. Connection closed
+2023-05-21 11:02:14.828 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 359. Connection.close() returned 
+2023-05-21 11:02:14.837 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 365. Connection closed
+2023-05-21 11:02:14.837 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 365. Connection.close() returned 
+2023-05-21 11:02:14.874 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 366. Connection closed
+2023-05-21 11:02:14.874 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 366. Connection.close() returned 
+2023-05-21 11:02:26.536 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 368. Connection opened
+2023-05-21 11:02:26.537 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 368. Connection.new Connection returned 
+2023-05-21 11:02:26.537 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 368. Connection.isReadOnly() returned false
+2023-05-21 11:02:26.537 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 368. Connection.getAutoCommit() returned true
+2023-05-21 11:02:26.820 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 369. Connection opened
+2023-05-21 11:02:26.820 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 369. Connection.new Connection returned 
+2023-05-21 11:02:26.821 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 369. Connection.isReadOnly() returned false
+2023-05-21 11:02:26.821 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 369. Connection.getAutoCommit() returned true
+2023-05-21 11:02:27.206 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 370. Connection opened
+2023-05-21 11:02:27.206 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 370. Connection.new Connection returned 
+2023-05-21 11:02:27.207 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 370. Connection.isReadOnly() returned false
+2023-05-21 11:02:27.207 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 370. Connection.getAutoCommit() returned true
+2023-05-21 11:02:27.829 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 371. Connection opened
+2023-05-21 11:02:27.829 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 371. Connection.new Connection returned 
+2023-05-21 11:02:27.829 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 371. Connection.isReadOnly() returned false
+2023-05-21 11:02:27.829 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 371. Connection.getAutoCommit() returned true
+2023-05-21 11:02:28.734 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 372. Connection opened
+2023-05-21 11:02:28.734 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 372. Connection.new Connection returned 
+2023-05-21 11:02:28.734 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 372. Connection.isReadOnly() returned false
+2023-05-21 11:02:28.734 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 372. Connection.getAutoCommit() returned true
+2023-05-21 11:02:29.305 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 373. Connection opened
+2023-05-21 11:02:29.305 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 373. Connection.new Connection returned 
+2023-05-21 11:02:29.305 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 373. Connection.isReadOnly() returned false
+2023-05-21 11:02:29.305 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 373. Connection.getAutoCommit() returned true
+2023-05-21 11:02:31.688 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 374. Connection opened
+2023-05-21 11:02:31.689 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 374. Connection.new Connection returned 
+2023-05-21 11:02:31.689 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 374. Connection.isReadOnly() returned false
+2023-05-21 11:02:31.689 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 374. Connection.getAutoCommit() returned true
+2023-05-21 11:02:32.420 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 375. Connection opened
+2023-05-21 11:02:32.421 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 375. Connection.new Connection returned 
+2023-05-21 11:02:32.421 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 375. Connection.isReadOnly() returned false
+2023-05-21 11:02:32.421 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 375. Connection.getAutoCommit() returned true
+2023-05-21 11:02:33.808 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 376. Connection opened
+2023-05-21 11:02:33.808 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 376. Connection.new Connection returned 
+2023-05-21 11:02:33.808 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 376. Connection.isReadOnly() returned false
+2023-05-21 11:02:33.808 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 376. Connection.getAutoCommit() returned true
+2023-05-21 11:02:34.867 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 377. Connection opened
+2023-05-21 11:02:34.868 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 377. Connection.new Connection returned 
+2023-05-21 11:02:34.868 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 377. Connection.isReadOnly() returned false
+2023-05-21 11:02:34.868 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 377. Connection.getAutoCommit() returned true
+2023-05-21 11:31:43.444 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 369. Connection closed
+2023-05-21 11:31:43.445 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 369. Connection.close() returned 
+2023-05-21 11:31:43.522 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 378. Connection opened
+2023-05-21 11:31:43.522 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 378. Connection.new Connection returned 
+2023-05-21 11:31:43.522 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 378. Connection.isReadOnly() returned false
+2023-05-21 11:31:43.522 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 378. Connection.getAutoCommit() returned true
+2023-05-21 11:31:47.891 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 371. Connection closed
+2023-05-21 11:31:47.892 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 371. Connection.close() returned 
+2023-05-21 11:31:47.933 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 373. Connection closed
+2023-05-21 11:31:47.934 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 373. Connection.close() returned 
+2023-05-21 11:31:48.014 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 379. Connection opened
+2023-05-21 11:31:48.014 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 379. Connection.new Connection returned 
+2023-05-21 11:31:48.014 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 379. Connection.isReadOnly() returned false
+2023-05-21 11:31:48.014 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 379. Connection.getAutoCommit() returned true
+2023-05-21 11:31:48.134 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 380. Connection opened
+2023-05-21 11:31:48.134 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 380. Connection.new Connection returned 
+2023-05-21 11:31:48.134 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 380. Connection.isReadOnly() returned false
+2023-05-21 11:31:48.134 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 380. Connection.getAutoCommit() returned true
+2023-05-21 11:31:49.346 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 368. Connection closed
+2023-05-21 11:31:49.347 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 368. Connection.close() returned 
+2023-05-21 11:31:49.456 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 381. Connection opened
+2023-05-21 11:31:49.457 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 381. Connection.new Connection returned 
+2023-05-21 11:31:49.457 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 381. Connection.isReadOnly() returned false
+2023-05-21 11:31:49.457 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 381. Connection.getAutoCommit() returned true
+2023-05-21 11:32:00.860 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 377. Connection closed
+2023-05-21 11:32:00.860 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 377. Connection.close() returned 
+2023-05-21 11:32:00.904 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 382. Connection opened
+2023-05-21 11:32:00.904 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 382. Connection.new Connection returned 
+2023-05-21 11:32:00.904 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 382. Connection.isReadOnly() returned false
+2023-05-21 11:32:00.904 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 382. Connection.getAutoCommit() returned true
+2023-05-21 11:32:01.998 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 376. Connection closed
+2023-05-21 11:32:01.999 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 376. Connection.close() returned 
+2023-05-21 11:32:02.098 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 383. Connection opened
+2023-05-21 11:32:02.098 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 383. Connection.new Connection returned 
+2023-05-21 11:32:02.098 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 383. Connection.isReadOnly() returned false
+2023-05-21 11:32:02.098 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 383. Connection.getAutoCommit() returned true
+2023-05-21 11:32:03.167 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 374. Connection closed
+2023-05-21 11:32:03.167 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 374. Connection.close() returned 
+2023-05-21 11:32:03.233 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 384. Connection opened
+2023-05-21 11:32:03.234 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 384. Connection.new Connection returned 
+2023-05-21 11:32:03.234 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 384. Connection.isReadOnly() returned false
+2023-05-21 11:32:03.234 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 384. Connection.getAutoCommit() returned true
+2023-05-21 11:32:18.635 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 370. Connection closed
+2023-05-21 11:32:18.635 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 370. Connection.close() returned 
+2023-05-21 11:32:18.718 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 385. Connection opened
+2023-05-21 11:32:18.718 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 385. Connection.new Connection returned 
+2023-05-21 11:32:18.718 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 385. Connection.isReadOnly() returned false
+2023-05-21 11:32:18.718 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 385. Connection.getAutoCommit() returned true
+2023-05-21 11:32:27.072 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 372. Connection closed
+2023-05-21 11:32:27.072 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 372. Connection.close() returned 
+2023-05-21 11:32:27.108 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 386. Connection opened
+2023-05-21 11:32:27.108 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 386. Connection.new Connection returned 
+2023-05-21 11:32:27.109 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 386. Connection.isReadOnly() returned false
+2023-05-21 11:32:27.109 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 386. Connection.getAutoCommit() returned true
+2023-05-21 11:32:27.276 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 375. Connection closed
+2023-05-21 11:32:27.276 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 375. Connection.close() returned 
+2023-05-21 11:32:27.358 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 387. Connection opened
+2023-05-21 11:32:27.358 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 387. Connection.new Connection returned 
+2023-05-21 11:32:27.358 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 387. Connection.isReadOnly() returned false
+2023-05-21 11:32:27.358 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 387. Connection.getAutoCommit() returned true
+2023-05-21 12:01:13.449 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 380. Connection closed
+2023-05-21 12:01:13.449 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 380. Connection.close() returned 
+2023-05-21 12:01:13.486 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 388. Connection opened
+2023-05-21 12:01:13.487 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 388. Connection.new Connection returned 
+2023-05-21 12:01:13.487 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 388. Connection.isReadOnly() returned false
+2023-05-21 12:01:13.487 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 388. Connection.getAutoCommit() returned true
+2023-05-21 12:01:13.619 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 381. Connection closed
+2023-05-21 12:01:13.619 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 381. Connection.close() returned 
+2023-05-21 12:01:13.764 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 389. Connection opened
+2023-05-21 12:01:13.764 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 389. Connection.new Connection returned 
+2023-05-21 12:01:13.764 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 389. Connection.isReadOnly() returned false
+2023-05-21 12:01:13.765 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 389. Connection.getAutoCommit() returned true
+2023-05-21 12:01:17.222 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 378. Connection closed
+2023-05-21 12:01:17.222 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 378. Connection.close() returned 
+2023-05-21 12:01:17.278 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 390. Connection opened
+2023-05-21 12:01:17.278 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 390. Connection.new Connection returned 
+2023-05-21 12:01:17.278 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 390. Connection.isReadOnly() returned false
+2023-05-21 12:01:17.278 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 390. Connection.getAutoCommit() returned true
+2023-05-21 12:01:23.356 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 384. Connection closed
+2023-05-21 12:01:23.357 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 384. Connection.close() returned 
+2023-05-21 12:01:23.441 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 391. Connection opened
+2023-05-21 12:01:23.441 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 391. Connection.new Connection returned 
+2023-05-21 12:01:23.441 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 391. Connection.isReadOnly() returned false
+2023-05-21 12:01:23.441 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 391. Connection.getAutoCommit() returned true
+2023-05-21 12:01:24.798 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 379. Connection closed
+2023-05-21 12:01:24.798 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 379. Connection.close() returned 
+2023-05-21 12:01:24.846 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 392. Connection opened
+2023-05-21 12:01:24.846 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 392. Connection.new Connection returned 
+2023-05-21 12:01:24.846 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 392. Connection.isReadOnly() returned false
+2023-05-21 12:01:24.846 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 392. Connection.getAutoCommit() returned true
+2023-05-21 12:01:40.424 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 385. Connection closed
+2023-05-21 12:01:40.424 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 385. Connection.close() returned 
+2023-05-21 12:01:40.478 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 393. Connection opened
+2023-05-21 12:01:40.478 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 393. Connection.new Connection returned 
+2023-05-21 12:01:40.478 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 393. Connection.isReadOnly() returned false
+2023-05-21 12:01:40.478 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 393. Connection.getAutoCommit() returned true
+2023-05-21 12:01:46.342 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 382. Connection closed
+2023-05-21 12:01:46.342 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 382. Connection.close() returned 
+2023-05-21 12:01:46.382 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 394. Connection opened
+2023-05-21 12:01:46.382 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 394. Connection.new Connection returned 
+2023-05-21 12:01:46.382 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 394. Connection.isReadOnly() returned false
+2023-05-21 12:01:46.382 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 394. Connection.getAutoCommit() returned true
+2023-05-21 12:01:47.815 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 386. Connection closed
+2023-05-21 12:01:47.815 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 386. Connection.close() returned 
+2023-05-21 12:01:47.844 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 395. Connection opened
+2023-05-21 12:01:47.844 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 395. Connection.new Connection returned 
+2023-05-21 12:01:47.844 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 395. Connection.isReadOnly() returned false
+2023-05-21 12:01:47.844 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 395. Connection.getAutoCommit() returned true
+2023-05-21 12:01:58.959 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 383. Connection closed
+2023-05-21 12:01:58.966 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 383. Connection.close() returned 
+2023-05-21 12:01:59.056 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 396. Connection opened
+2023-05-21 12:01:59.056 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 396. Connection.new Connection returned 
+2023-05-21 12:01:59.056 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 396. Connection.isReadOnly() returned false
+2023-05-21 12:01:59.057 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 396. Connection.getAutoCommit() returned true
+2023-05-21 12:02:09.319 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 387. Connection closed
+2023-05-21 12:02:09.320 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 387. Connection.close() returned 
+2023-05-21 12:02:09.457 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 397. Connection opened
+2023-05-21 12:02:09.457 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 397. Connection.new Connection returned 
+2023-05-21 12:02:09.457 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 397. Connection.isReadOnly() returned false
+2023-05-21 12:02:09.457 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 397. Connection.getAutoCommit() returned true
+2023-05-21 12:32:56.606 WARN  [HikariPool-32 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-32 - Thread starvation or clock leap detected (housekeeper delta=27m41s824ms255µs800ns).
+2023-05-21 12:32:56.790 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 390. Connection closed
+2023-05-21 12:32:56.790 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 390. Connection.close() returned 
+2023-05-21 12:32:56.791 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 389. Connection closed
+2023-05-21 12:32:56.791 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 389. Connection.close() returned 
+2023-05-21 12:32:56.792 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 392. Connection closed
+2023-05-21 12:32:56.792 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 392. Connection.close() returned 
+2023-05-21 12:32:56.793 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 388. Connection closed
+2023-05-21 12:32:56.793 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 388. Connection.close() returned 
+2023-05-21 12:32:56.794 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 391. Connection closed
+2023-05-21 12:32:56.794 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 391. Connection.close() returned 
+2023-05-21 12:32:56.795 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 395. Connection closed
+2023-05-21 12:32:56.795 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 395. Connection.close() returned 
+2023-05-21 12:32:56.796 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 397. Connection closed
+2023-05-21 12:32:56.796 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 397. Connection.close() returned 
+2023-05-21 12:32:56.796 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 393. Connection closed
+2023-05-21 12:32:56.797 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 393. Connection.close() returned 
+2023-05-21 12:32:56.797 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 394. Connection closed
+2023-05-21 12:32:56.797 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 394. Connection.close() returned 
+2023-05-21 12:32:56.798 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 396. Connection closed
+2023-05-21 12:32:56.798 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 396. Connection.close() returned 
+2023-05-21 12:32:58.108 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 398. Connection opened
+2023-05-21 12:32:58.108 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 398. Connection.new Connection returned 
+2023-05-21 12:32:58.108 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 398. Connection.isReadOnly() returned false
+2023-05-21 12:32:58.109 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 398. Connection.getAutoCommit() returned true
+2023-05-21 12:32:59.360 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 399. Connection opened
+2023-05-21 12:32:59.360 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 399. Connection.new Connection returned 
+2023-05-21 12:32:59.360 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 399. Connection.isReadOnly() returned false
+2023-05-21 12:32:59.360 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 399. Connection.getAutoCommit() returned true
+2023-05-21 12:33:00.037 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 400. Connection opened
+2023-05-21 12:33:00.037 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 400. Connection.new Connection returned 
+2023-05-21 12:33:00.037 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 400. Connection.isReadOnly() returned false
+2023-05-21 12:33:00.037 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 400. Connection.getAutoCommit() returned true
+2023-05-21 12:33:00.626 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 401. Connection opened
+2023-05-21 12:33:00.626 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 401. Connection.new Connection returned 
+2023-05-21 12:33:00.626 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 401. Connection.isReadOnly() returned false
+2023-05-21 12:33:00.626 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 401. Connection.getAutoCommit() returned true
+2023-05-21 12:33:00.943 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 402. Connection opened
+2023-05-21 12:33:00.943 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 402. Connection.new Connection returned 
+2023-05-21 12:33:00.943 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 402. Connection.isReadOnly() returned false
+2023-05-21 12:33:00.943 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 402. Connection.getAutoCommit() returned true
+2023-05-21 12:33:01.289 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 403. Connection opened
+2023-05-21 12:33:01.289 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 403. Connection.new Connection returned 
+2023-05-21 12:33:01.289 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 403. Connection.isReadOnly() returned false
+2023-05-21 12:33:01.289 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 403. Connection.getAutoCommit() returned true
+2023-05-21 12:33:01.498 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 404. Connection opened
+2023-05-21 12:33:01.499 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 404. Connection.new Connection returned 
+2023-05-21 12:33:01.499 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 404. Connection.isReadOnly() returned false
+2023-05-21 12:33:01.499 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 404. Connection.getAutoCommit() returned true
+2023-05-21 12:33:01.710 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 405. Connection opened
+2023-05-21 12:33:01.710 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 405. Connection.new Connection returned 
+2023-05-21 12:33:01.710 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 405. Connection.isReadOnly() returned false
+2023-05-21 12:33:01.710 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 405. Connection.getAutoCommit() returned true
+2023-05-21 12:33:01.943 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 406. Connection opened
+2023-05-21 12:33:01.943 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 406. Connection.new Connection returned 
+2023-05-21 12:33:01.943 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 406. Connection.isReadOnly() returned false
+2023-05-21 12:33:01.943 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 406. Connection.getAutoCommit() returned true
+2023-05-21 12:33:02.409 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 407. Connection opened
+2023-05-21 12:33:02.409 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 407. Connection.new Connection returned 
+2023-05-21 12:33:02.409 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 407. Connection.isReadOnly() returned false
+2023-05-21 12:33:02.409 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 407. Connection.getAutoCommit() returned true
+2023-05-21 15:22:25.361 WARN  [HikariPool-32 housekeeper] [com.zaxxer.hikari.pool.HikariPool] - HikariPool-32 - Thread starvation or clock leap detected (housekeeper delta=2h38m58s514ms640µs900ns).
+2023-05-21 15:22:25.463 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 403. Connection closed
+2023-05-21 15:22:25.463 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 403. Connection.close() returned 
+2023-05-21 15:22:25.465 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 404. Connection closed
+2023-05-21 15:22:25.465 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 404. Connection.close() returned 
+2023-05-21 15:22:25.466 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 406. Connection closed
+2023-05-21 15:22:25.466 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 406. Connection.close() returned 
+2023-05-21 15:22:25.468 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 407. Connection closed
+2023-05-21 15:22:25.468 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 407. Connection.close() returned 
+2023-05-21 15:22:25.471 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 402. Connection closed
+2023-05-21 15:22:25.471 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 402. Connection.close() returned 
+2023-05-21 15:22:25.472 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 398. Connection closed
+2023-05-21 15:22:25.472 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 398. Connection.close() returned 
+2023-05-21 15:22:25.473 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 399. Connection closed
+2023-05-21 15:22:25.473 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 399. Connection.close() returned 
+2023-05-21 15:22:25.474 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 400. Connection closed
+2023-05-21 15:22:25.475 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 400. Connection.close() returned 
+2023-05-21 15:22:25.476 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 401. Connection closed
+2023-05-21 15:22:25.476 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 401. Connection.close() returned 
+2023-05-21 15:22:25.477 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 405. Connection closed
+2023-05-21 15:22:25.477 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 405. Connection.close() returned 
+2023-05-21 15:22:26.032 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 408. Connection opened
+2023-05-21 15:22:26.032 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 408. Connection.new Connection returned 
+2023-05-21 15:22:26.032 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 408. Connection.isReadOnly() returned false
+2023-05-21 15:22:26.032 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 408. Connection.getAutoCommit() returned true
+2023-05-21 15:22:29.371 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 409. Connection opened
+2023-05-21 15:22:29.372 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 409. Connection.new Connection returned 
+2023-05-21 15:22:29.372 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 409. Connection.isReadOnly() returned false
+2023-05-21 15:22:29.372 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 409. Connection.getAutoCommit() returned true
+2023-05-21 15:22:29.628 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 410. Connection opened
+2023-05-21 15:22:29.628 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 410. Connection.new Connection returned 
+2023-05-21 15:22:29.628 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 410. Connection.isReadOnly() returned false
+2023-05-21 15:22:29.628 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 410. Connection.getAutoCommit() returned true
+2023-05-21 15:22:30.330 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 411. Connection opened
+2023-05-21 15:22:30.330 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 411. Connection.new Connection returned 
+2023-05-21 15:22:30.330 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 411. Connection.isReadOnly() returned false
+2023-05-21 15:22:30.330 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 411. Connection.getAutoCommit() returned true
+2023-05-21 15:22:31.806 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 412. Connection opened
+2023-05-21 15:22:31.806 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 412. Connection.new Connection returned 
+2023-05-21 15:22:31.807 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 412. Connection.isReadOnly() returned false
+2023-05-21 15:22:31.807 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 412. Connection.getAutoCommit() returned true
+2023-05-21 15:22:33.608 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 413. Connection opened
+2023-05-21 15:22:33.608 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 413. Connection.new Connection returned 
+2023-05-21 15:22:33.608 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 413. Connection.isReadOnly() returned false
+2023-05-21 15:22:33.608 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 413. Connection.getAutoCommit() returned true
+2023-05-21 15:22:34.249 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 414. Connection opened
+2023-05-21 15:22:34.249 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 414. Connection.new Connection returned 
+2023-05-21 15:22:34.249 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 414. Connection.isReadOnly() returned false
+2023-05-21 15:22:34.249 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 414. Connection.getAutoCommit() returned true
+2023-05-21 15:22:34.806 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 415. Connection opened
+2023-05-21 15:22:34.806 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 415. Connection.new Connection returned 
+2023-05-21 15:22:34.806 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 415. Connection.isReadOnly() returned false
+2023-05-21 15:22:34.806 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 415. Connection.getAutoCommit() returned true
+2023-05-21 15:22:38.525 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 416. Connection opened
+2023-05-21 15:22:38.525 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 416. Connection.new Connection returned 
+2023-05-21 15:22:38.525 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 416. Connection.isReadOnly() returned false
+2023-05-21 15:22:38.525 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 416. Connection.getAutoCommit() returned true
+2023-05-21 15:22:38.718 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 417. Connection opened
+2023-05-21 15:22:38.719 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 417. Connection.new Connection returned 
+2023-05-21 15:22:38.719 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 417. Connection.isReadOnly() returned false
+2023-05-21 15:22:38.719 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 417. Connection.getAutoCommit() returned true
+2023-05-21 15:51:53.459 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 410. Connection closed
+2023-05-21 15:51:53.459 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 410. Connection.close() returned 
+2023-05-21 15:51:53.614 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 418. Connection opened
+2023-05-21 15:51:53.614 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 418. Connection.new Connection returned 
+2023-05-21 15:51:53.614 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 418. Connection.isReadOnly() returned false
+2023-05-21 15:51:53.615 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 418. Connection.getAutoCommit() returned true
+2023-05-21 15:51:53.691 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 417. Connection closed
+2023-05-21 15:51:53.691 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 417. Connection.close() returned 
+2023-05-21 15:51:53.766 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 419. Connection opened
+2023-05-21 15:51:53.767 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 419. Connection.new Connection returned 
+2023-05-21 15:51:53.767 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 419. Connection.isReadOnly() returned false
+2023-05-21 15:51:53.767 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 419. Connection.getAutoCommit() returned true
+2023-05-21 15:51:58.195 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 416. Connection closed
+2023-05-21 15:51:58.195 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 416. Connection.close() returned 
+2023-05-21 15:51:58.229 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 420. Connection opened
+2023-05-21 15:51:58.229 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 420. Connection.new Connection returned 
+2023-05-21 15:51:58.229 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 420. Connection.isReadOnly() returned false
+2023-05-21 15:51:58.229 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 420. Connection.getAutoCommit() returned true
+2023-05-21 15:52:01.614 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 413. Connection closed
+2023-05-21 15:52:01.614 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 413. Connection.close() returned 
+2023-05-21 15:52:01.731 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 421. Connection opened
+2023-05-21 15:52:01.732 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 421. Connection.new Connection returned 
+2023-05-21 15:52:01.732 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 421. Connection.isReadOnly() returned false
+2023-05-21 15:52:01.732 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 421. Connection.getAutoCommit() returned true
+2023-05-21 15:52:02.502 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 415. Connection closed
+2023-05-21 15:52:02.503 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 415. Connection.close() returned 
+2023-05-21 15:52:02.581 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 422. Connection opened
+2023-05-21 15:52:02.581 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 422. Connection.new Connection returned 
+2023-05-21 15:52:02.581 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 422. Connection.isReadOnly() returned false
+2023-05-21 15:52:02.581 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 422. Connection.getAutoCommit() returned true
+2023-05-21 15:52:18.238 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 411. Connection closed
+2023-05-21 15:52:18.238 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 411. Connection.close() returned 
+2023-05-21 15:52:18.290 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 423. Connection opened
+2023-05-21 15:52:18.290 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 423. Connection.new Connection returned 
+2023-05-21 15:52:18.290 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 423. Connection.isReadOnly() returned false
+2023-05-21 15:52:18.290 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 423. Connection.getAutoCommit() returned true
+2023-05-21 15:52:19.912 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 408. Connection closed
+2023-05-21 15:52:19.912 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 408. Connection.close() returned 
+2023-05-21 15:52:19.974 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 424. Connection opened
+2023-05-21 15:52:19.974 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 424. Connection.new Connection returned 
+2023-05-21 15:52:19.974 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 424. Connection.isReadOnly() returned false
+2023-05-21 15:52:19.974 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 424. Connection.getAutoCommit() returned true
+2023-05-21 15:52:22.000 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 409. Connection closed
+2023-05-21 15:52:22.000 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 409. Connection.close() returned 
+2023-05-21 15:52:22.100 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 425. Connection opened
+2023-05-21 15:52:22.101 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 425. Connection.new Connection returned 
+2023-05-21 15:52:22.101 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 425. Connection.isReadOnly() returned false
+2023-05-21 15:52:22.101 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 425. Connection.getAutoCommit() returned true
+2023-05-21 15:52:30.471 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 414. Connection closed
+2023-05-21 15:52:30.471 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 414. Connection.close() returned 
+2023-05-21 15:52:30.592 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 426. Connection opened
+2023-05-21 15:52:30.592 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 426. Connection.new Connection returned 
+2023-05-21 15:52:30.592 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 426. Connection.isReadOnly() returned false
+2023-05-21 15:52:30.592 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 426. Connection.getAutoCommit() returned true
+2023-05-21 15:52:31.011 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 412. Connection closed
+2023-05-21 15:52:31.011 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 412. Connection.close() returned 
+2023-05-21 15:52:31.134 INFO  [HikariPool-32 connection adder] [jdbc.connection] - 427. Connection opened
+2023-05-21 15:52:31.135 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 427. Connection.new Connection returned 
+2023-05-21 15:52:31.135 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 427. Connection.isReadOnly() returned false
+2023-05-21 15:52:31.135 INFO  [HikariPool-32 connection adder] [jdbc.audit] - 427. Connection.getAutoCommit() returned true
+2023-05-21 16:02:39.223 INFO  [RMI TCP Connection(273)-127.0.0.1] [o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin] - Application shutdown requested.
+2023-05-21 16:02:39.468 INFO  [RMI TCP Connection(273)-127.0.0.1] [o.s.o.j.LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-21 16:02:39.500 INFO  [RMI TCP Connection(273)-127.0.0.1] [jdbc.audit] - 418. Connection.isValid(5) returned true
+2023-05-21 16:02:39.503 INFO  [RMI TCP Connection(273)-127.0.0.1] [jdbc.audit] - 418. Statement.new Statement returned 
+2023-05-21 16:02:39.503 INFO  [RMI TCP Connection(273)-127.0.0.1] [jdbc.audit] - 418. Connection.createStatement() returned net.sf.log4jdbc.sql.jdbcapi.StatementSpy@4aae7da7
+2023-05-21 16:02:39.504 INFO  [RMI TCP Connection(273)-127.0.0.1] [jdbc.sqlonly] - SHUTDOWN
+
+2023-05-21 16:02:39.514 ERROR [RMI TCP Connection(273)-127.0.0.1] [jdbc.audit] - 418. Statement.execute(SHUTDOWN) SHUTDOWN
+
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1151)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:771)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:498)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:112)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1011)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1531)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1311)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2163)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2118)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.execute(StatementSpy.java:923)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.lambda$new$1(DevToolsDataSourceAutoConfiguration.java:140)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.shutdown(DevToolsDataSourceAutoConfiguration.java:159)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor.destroy(DevToolsDataSourceAutoConfiguration.java:105)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 69 common frames omitted
+2023-05-21 16:02:39.517 ERROR [RMI TCP Connection(273)-127.0.0.1] [jdbc.sqlonly] - 418. Statement.execute(SHUTDOWN) SHUTDOWN
+
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1151)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:771)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:498)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:112)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1011)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1531)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1311)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2163)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2118)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.execute(StatementSpy.java:923)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.lambda$new$1(DevToolsDataSourceAutoConfiguration.java:140)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.shutdown(DevToolsDataSourceAutoConfiguration.java:159)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor.destroy(DevToolsDataSourceAutoConfiguration.java:105)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 69 common frames omitted
+2023-05-21 16:02:39.519 ERROR [RMI TCP Connection(273)-127.0.0.1] [jdbc.sqltiming] - 418. Statement.execute(SHUTDOWN) FAILED! SHUTDOWN
+ {FAILED after 7 msec}
+java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630)
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1151)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:771)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:498)
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:112)
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1011)
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1531)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1311)
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2163)
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2118)
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328)
+	at net.sf.log4jdbc.sql.jdbcapi.StatementSpy.execute(StatementSpy.java:923)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.lambda$new$1(DevToolsDataSourceAutoConfiguration.java:140)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor$InMemoryDatabase.shutdown(DevToolsDataSourceAutoConfiguration.java:159)
+	at org.springframework.boot.devtools.autoconfigure.DevToolsDataSourceAutoConfiguration$NonEmbeddedInMemoryDatabaseShutdownExecutor.destroy(DevToolsDataSourceAutoConfiguration.java:105)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:212)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1161)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown(SpringApplicationAdminMXBeanRegistrar.java:160)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at sun.reflect.misc.Trampoline.invoke(MethodUtil.java:72)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/sun.reflect.misc.MethodUtil.invoke(MethodUtil.java:262)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:193)
+	at java.management/com.sun.jmx.mbeanserver.ConvertingMethod.invokeWithOpenReturn(ConvertingMethod.java:175)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:117)
+	at java.management/com.sun.jmx.mbeanserver.MXBeanIntrospector.invokeM2(MXBeanIntrospector.java:54)
+	at java.management/com.sun.jmx.mbeanserver.MBeanIntrospector.invokeM(MBeanIntrospector.java:237)
+	at java.management/com.sun.jmx.mbeanserver.PerInterface.invoke(PerInterface.java:138)
+	at java.management/com.sun.jmx.mbeanserver.MBeanSupport.invoke(MBeanSupport.java:252)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:814)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:587)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:828)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:705)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:704)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00900: invalid SQL statement
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637)
+	... 69 common frames omitted
+2023-05-21 16:02:39.520 INFO  [RMI TCP Connection(273)-127.0.0.1] [jdbc.audit] - 418. Statement.close() returned 
+2023-05-21 16:02:39.521 INFO  [RMI TCP Connection(273)-127.0.0.1] [jdbc.audit] - 418. Connection.clearWarnings() returned 
+2023-05-21 16:02:39.521 WARN  [RMI TCP Connection(273)-127.0.0.1] [o.s.b.f.support.DisposableBeanAdapter] - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': java.sql.SQLSyntaxErrorException: ORA-00900: invalid SQL statement
+
+2023-05-21 16:02:39.522 INFO  [RMI TCP Connection(273)-127.0.0.1] [com.zaxxer.hikari.HikariDataSource] - HikariPool-32 - Shutdown initiated...
+2023-05-21 16:02:39.561 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 418. Connection closed
+2023-05-21 16:02:39.561 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 418. Connection.close() returned 
+2023-05-21 16:02:39.568 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 419. Connection closed
+2023-05-21 16:02:39.568 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 419. Connection.close() returned 
+2023-05-21 16:02:39.570 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 420. Connection closed
+2023-05-21 16:02:39.570 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 420. Connection.close() returned 
+2023-05-21 16:02:39.576 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 421. Connection closed
+2023-05-21 16:02:39.576 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 421. Connection.close() returned 
+2023-05-21 16:02:39.578 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 422. Connection closed
+2023-05-21 16:02:39.578 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 422. Connection.close() returned 
+2023-05-21 16:02:39.583 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 423. Connection closed
+2023-05-21 16:02:39.583 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 423. Connection.close() returned 
+2023-05-21 16:02:39.589 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 424. Connection closed
+2023-05-21 16:02:39.589 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 424. Connection.close() returned 
+2023-05-21 16:02:39.591 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 425. Connection closed
+2023-05-21 16:02:39.593 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 425. Connection.close() returned 
+2023-05-21 16:02:39.595 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 426. Connection closed
+2023-05-21 16:02:39.595 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 426. Connection.close() returned 
+2023-05-21 16:02:39.597 INFO  [HikariPool-32 connection closer] [jdbc.connection] - 427. Connection closed
+2023-05-21 16:02:39.597 INFO  [HikariPool-32 connection closer] [jdbc.audit] - 427. Connection.close() returned 
+2023-05-21 16:02:39.604 INFO  [RMI TCP Connection(273)-127.0.0.1] [com.zaxxer.hikari.HikariDataSource] - HikariPool-32 - Shutdown completed.

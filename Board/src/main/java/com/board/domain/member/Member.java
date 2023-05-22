@@ -50,7 +50,6 @@ import lombok.extern.slf4j.Slf4j;
 @AllArgsConstructor
 @Getter
 @Entity
-@Builder
 @SequenceGenerator (
 	name = "BOARD_SEQ_GENERATOR",
     sequenceName = "BOARD_SEQ",	//매핑할 데이터 베이스 스퀀스 이름
@@ -87,39 +86,37 @@ public class Member implements Serializable{
 //	private Role role;
 	
 	@ElementCollection(fetch = FetchType.EAGER)
-	@Builder.Default
 	private List<String> roles = new ArrayList<>();
 
 	public void addRoles_USER() {
 		roles.add("USER");
 	}
+
+//	@OneToMany(mappedBy = "writer" ,cascade = CascadeType.ALL,orphanRemoval = true)
+//	private List<Post> postList = new ArrayList<>();
+//	
+//	public void addPost(Post post) {
+//		postList.add(post);
+//		post.setWriter(this);
+//	}
+//	
 	
-	@Builder.Default
-	@OneToMany(mappedBy = "writer" ,cascade = CascadeType.ALL,orphanRemoval = true)
-	private List<Post> postList = new ArrayList<>();
+//	@OneToMany(mappedBy = "seller", cascade = CascadeType.ALL,orphanRemoval = true)
+//	private List<Item> itemList = new ArrayList<>();
+//	
+//	public void addItem(Item item) {
+//		itemList.add(item);
+//		item.setSeller(this);
+//	}
 	
-	public void addPost(Post post) {
-		postList.add(post);
-		post.setWriter(this);
-	}
-	
-	
-	@OneToMany(mappedBy = "seller", cascade = CascadeType.ALL,orphanRemoval = true)
-	private List<Item> itemList = new ArrayList<>();
-	
-	public void addItem(Item item) {
-		itemList.add(item);
-		item.setSeller(this);
-	}
-	
-	@JsonIgnoreProperties({"member", "parentComment"})
-	@OneToMany(mappedBy = "writer")
-	private List<Comment> comments = new ArrayList<>();
-	
-	public void addComment(Comment comment) {
-		comments.add(comment);
-		comment.setMember(this);
-	}
+//	@JsonIgnoreProperties({"member", "parentComment"})
+//	@OneToMany(mappedBy = "writer")
+//	private List<Comment> comments = new ArrayList<>();
+//	
+//	public void addComment(Comment comment) {
+//		comments.add(comment);
+//		comment.setMember(this);
+//	}
 	
 	public void encodePassword(PasswordEncoder passwordEncoder){
         this.password = passwordEncoder.encode(password);
@@ -139,5 +136,37 @@ public class Member implements Serializable{
 	public void setDeleteYn(String deleteYn) {
 		this.delete_yn =deleteYn;
 	}
+
+	@Builder
+	public Member(String nickname, String password) {
+		this.nickname = nickname;
+		this.password = password;
+	}
 	
+	@Builder
+	public Member(Long id, String username, String nickname, String email) {
+		this.id = id;
+		this.username = username;
+		this.nickname = nickname;
+		this.email = email;
+	}
+	@Builder
+	public Member(Long id,String name, String username, String nickname, String email, String delete_yn) {
+		this.id = id;
+		this.username = username;
+		this.nickname = nickname;
+		this.email = email;
+		this.name = name;
+		this.delete_yn = delete_yn;
+	}
+	@Builder
+	public Member(Long id,String name, String username, String nickname, String email, String delete_yn,List<String> roles) {
+		this.id = id;
+		this.username = username;
+		this.nickname = nickname;
+		this.email = email;
+		this.name = name;
+		this.delete_yn = delete_yn;
+		this.roles = roles;
+	}
 }

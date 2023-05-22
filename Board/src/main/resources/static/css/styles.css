@@ -73,6 +73,24 @@ th, td {
 }
 
 
+    .order-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .order-image {
+        margin-right: 10px;
+    }
+    
+    .order-details {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .order-details span {
+        margin-bottom: 5px;
+    }
 
 
 

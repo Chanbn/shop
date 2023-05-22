@@ -17,7 +17,7 @@ public interface ItemRepository extends JpaRepository<Item, Long>{
 	@Query("SELECT i FROM Item i LEFT JOIN FETCH i.fileLists WHERE i.id=:id")
 	Optional<Item> getInfo(@Param("id") Long id);
 	
-	Page<Item> findByNameAndIsSoldOut(Pageable pageable, String name, String isSoldOut);
+	Page<Item> findByItemnameAndIsSoldOut(String itemname, String isSoldOut, Pageable pageable);
 	Page<Item> findBySellerAndIsSoldOut(Pageable pageable, String seller, String isSoldOut);
 	Page<Item> findAllByIsSoldOut(Pageable pageable, String isSoldOut);
 	}

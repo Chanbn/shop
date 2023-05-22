@@ -13,7 +13,7 @@ import lombok.Setter;
 @Setter
 public class ItemSaveDto {
 	private Long id;
-	private String name;
+	private String itemname;
 	private Long price;
 	private Long stock;
 	private String isSoldout;
@@ -22,6 +22,6 @@ public class ItemSaveDto {
 	private MemberInfoDto seller;
 	
 	public Item toEntity() {
-		return Item.builder().name(name).detail(detail).price(price).stock(stock).build();
+		return Item.builder().itemname(itemname).detail(detail).price(price).stock(stock).build();
 	}
 }

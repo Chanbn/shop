@@ -30,7 +30,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		// TODO Auto-generated method stub
 		http.authorizeRequests()
 		.antMatchers("/board/**/list","/board/**/get").permitAll()
-		.antMatchers("/member/profile","/member/postinfo","/member/commentInfo","/myPage/home","/board/**/write").authenticated()
+		.antMatchers("/member/profile","/member/postinfo","/member/commentInfo","/myPage/home","/board/**/write","/order/**").authenticated()
 		.antMatchers("/board/**/manage/list","/member/info").hasRole("ADMIN")
 		.and()
 		.formLogin()

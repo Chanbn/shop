@@ -6,6 +6,9 @@
 	<meta name="_csrf_header" th:content="${_csrf.headerName}"/>
 	<!-- ... -->
 <script src="https://code.jquery.com/jquery.min.js"></script>
+
+<script src="https://cdn.iamport.kr/v1/iamport.js"></script>
+
 <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
 </head>
 <body>
@@ -50,15 +53,15 @@
     
 
             <tr class="data-row" th:if="${not #lists.isEmpty(orderInfo)}" th:each="row, status: ${orderInfo}">
-                <td><span id="id" th:text="${row.id}"></span>
+                <td><span id="itemId" th:text="${row.itemId}"></span>
 					<input type="hidden" id="createdDate" name="createdDate" th:value="${row.createdDate}">
                     <input type="hidden" id="fileName" name="fileName" th:value="${row.fileName}">
-                    <input type="hidden" name="id" th:value="${row.id}">
+                    <input type="hidden" name="itemId" th:value="${row.itemId}">
 					<input type="hidden" name="itemname" th:value="${row.itemname}">
 					<input type="hidden" name="price" th:value="${row.price}">
                 </td>
                 <td>
-                <a th:href="@{'/shop/get?id=' + ${row.id}}">
+                <a th:href="@{'/shop/get?id=' + ${row.itemId}}">
                 <img class="order-image" th:src="@{'/shop/getImage/' + ${row.fileName} + '?uploadDate=' + ${row.createdDate}}" alt="Image" width="100" height="100" />
                 </a>
                 </td>
@@ -117,6 +120,170 @@
 
 
 <script th:inline="javascript">
+
+var IMP = window.IMP;   // 생략 가능
+IMP.init("imp28617718"); // 예: imp00000000 
+
+
+
+var loginUserName = null;
+var loginUserEmail = null;
+var loginUserLongid = null;
+var loginUserauthority = null;
+
+$(function () {
+ var token = $("meta[name='_csrf']").attr("content");
+ var header = $("meta[name='_csrf_header']").attr("content");
+ $(document).ajaxSend(function(e, xhr, options) {
+     xhr.setRequestHeader(header, token);
+ });
+ 
+	$.ajax({
+		url: '/member/current',
+		type: 'GET',
+		success: function(user){
+			loginUserName = user.username;
+			loginUserEmail = user.email;
+			loginUserLongid = user.id;
+			loginUserauthority = user.roles;
+			console.log(loginUserName);
+			console.log(loginUserEmail);
+			console.log(loginUserLongid);
+			console.log(loginUserauthority[0]);
+		},
+		error: function(){
+			console.log('로그인 상태가 아닙니다.');
+		}
+	});
+
+});
+
+function requestPay(orderId) {
+	
+	var orderInfo = [];
+	var token = $("meta[name='_csrf']").attr("content");
+	var header = $("meta[name='_csrf_header']").attr("content");
+	var totalPay = 0; 
+	 
+    $('.data-row').each(function() {
+        var itemId = $(this).find('span[id^="itemId"]').text();
+        var count = $(this).find('select').val();
+        var price = $(this).find('span[id^="price"]').text();
+        var name = $(this).find('span[id^="itemname"]').text();
+        var fileName = $(this).find('input[id^="fileName"]').val();
+        var createdDate = $(this).find('input[id^="createdDate"]').val();
+        totalPay += parseInt(count) * parseFloat(price);
+        var order ={
+        		itemId: itemId,
+        	    count: count,
+        	    itemname: name,
+        	    count: count,
+        	    price: price,
+         	    fileName: fileName,
+        	    createdDate: createdDate       
+        	    };
+        orderInfo.push(order);
+
+    });
+    var deliveryName = $('#deliveryName').val();
+    var deliveryAddress = $('#deliveryAddress').val();
+    var deliveryHp = $('#deliveryHp').val();
+    
+    var orderData = {
+    	    name: deliveryName,
+			address: deliveryAddress,
+			hp :deliveryHp 
+    };
+
+	var buy_item = (orderInfo.length>1) ? orderInfo[0].itemname+"외 "+orderInfo.length-1+"건" : orderInfo[0].itemname;
+	var token = $("meta[name='_csrf']").attr("content");
+	var header = $("meta[name='_csrf_header']").attr("content");
+
+  IMP.request_pay({
+    pg: "kakaopay.TC0ONETIME",
+    pay_method: "card",
+    merchant_uid: 'merchant_' + new Date().getTime(),   // 주문번호
+    name: buy_item,
+    amount: totalPay,                         // 숫자 타입
+    buyer_email: loginUserEmail,
+    buyer_name: loginUserName,
+    buyer_tel: deliveryHp,
+    buyer_addr: deliveryAddress,
+    buyer_postcode: "01181"
+  }, function (rsp) { // callback
+    //rsp.imp_uid 값으로 결제 단건조회 API를 호출하여 결제결과를 판단합니다.
+   // 보낼 데이터 : orderId, orderInfo 배열
+    
+            if (rsp.success) {// 결제성공시 로직
+            let data = {
+				imp_uid:rsp.imp_uid,
+				amount:rsp.paid_amount,
+				orderInfo:orderInfo,
+				orderId:orderId
+			};
+            //결제 검증
+            $.ajax({
+				type:"POST",
+				url:"/order/verifyIamport",
+				data:JSON.stringify(data),
+				contentType:"application/json; charset=utf-8",
+				dataType:"json",
+				headers: { 'X-CSRF-TOKEN': token },
+				success: function(result) {
+					alert("주문이 완료되었습니다.");
+					window.location.replace("http://localhost:8081/order/result?orderid="+orderId);
+					//self.close();
+				},
+				error: function(result){
+					alert("에러입니다");
+					alert(result.responseText);
+				}
+			});
+			
+        } else {// 결제 실패 시 로직
+			alert("결제 실패");
+			alert(rsp.error_msg);
+			console.log(rsp);            
+        }
+    
+    
+  });
+}
+
+function cancelPayments(temp){
+	let data = null;
+	if(temp!=null){//결제금액이 달라졌을때 결제취소
+			data={
+			impUid:temp.imp_uid,
+			reason:"결제 금액 위/변조. 결제 금액이 일치안함",
+			checksum:temp.paid_amount,
+			refundHolder:temp.buyer_name,
+			code:"11",
+			refundAccount:"3519735060303"
+		};
+	}else{//유저가 환불을 요청했을때 데이터
+		//화면만들고 작성예정	
+	}
+
+	$.ajax({
+		type:"POST",
+		url:"cancelPayments",
+		data:JSON.stringify(data),
+		contentType:"application/json; charset=utf-8",
+		success: function(result){
+			alert("결제금액 환불완료");
+			//self.close();//팝업창닫기
+			//결제 취소화면으로 이동해주기.
+		},
+		error: function(result){
+			alert("결제금액 환불못함. 이유: "+result.responseText);
+		}
+	});
+}
+
+
+
+
 $(function () {
 	totalPay();
 	getAddress();
@@ -124,7 +291,7 @@ $(function () {
 function totalPay(){
 	 var totalPay = 0; 
     $('.data-row').each(function() {
-        var id = $(this).find('span[id^="id"]').text();
+        var itemId = $(this).find('span[id^="itemId"]').text();
         var count = $(this).find('select').val();
         var price = $(this).find('span[id^="price"]').text();
         var name = $(this).find('span[id^="name"]').text();
@@ -135,7 +302,7 @@ function totalPay(){
         var deliveryHp = $(this).find('input[id^="deliveryHp"]').val();
 
         var data = {
-            id: id,
+        	itemId: itemId,
             count: count,
             price: price,
             name: name,
@@ -153,7 +320,7 @@ function payment(){
 	var token = $("meta[name='_csrf']").attr("content");
 	var header = $("meta[name='_csrf_header']").attr("content");
     $('.data-row').each(function() {
-        var id = $(this).find('span[id^="id"]').text();
+        var itemId = $(this).find('span[id^="itemId"]').text();
         var count = $(this).find('select').val();
         var price = $(this).find('span[id^="price"]').text();
         var name = $(this).find('span[id^="itemname"]').text();
@@ -161,7 +328,7 @@ function payment(){
         var createdDate = $(this).find('input[id^="createdDate"]').val();
        
         var order ={
-        	    id: id,
+        		itemId: itemId,
         	    count: count,
         	    itemname: name,
         	    count: count,
@@ -193,7 +360,8 @@ function payment(){
 		headers: { 'X-CSRF-TOKEN': token },
 		contentType: 'application/json',
 		success: function(data){
-			window.location.replace("http://localhost:8081/order/result?orderid="+data);
+			requestPay(data);
+			//window.location.replace("http://localhost:8081/order/result?orderid="+data);
 		},
 		error: function(request,status,error) {
 	    	  alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);

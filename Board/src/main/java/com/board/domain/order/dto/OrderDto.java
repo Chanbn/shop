@@ -35,7 +35,7 @@ public class OrderDto {
     
     @Builder
     public OrderDto(AddressDto addressDto, OrderInfo orderInfo) {
-    	this.itemId = orderInfo.getId();
+    	this.itemId = orderInfo.getItemId();
     	this.count = orderInfo.getCount();
     	this.name = addressDto.getName();
     	this.address = addressDto.getAddress();

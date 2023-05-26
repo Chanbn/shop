@@ -14,15 +14,15 @@ import lombok.Setter;
 @Getter
 public class OrderResultDto {
 
-	private Long id;
+	private Long orderId;
 	private List<OrderItem> orderItems;
 	private String deliveryAddress;
 	private String deliveryHp;
 	private String deliveryName;
 
 	@Builder
-	public OrderResultDto(Long id, List<OrderItem> orderItems, String deliveryAddress, String deliveryHp, String deliveryName){
-		this.id = id;
+	public OrderResultDto(Long orderId, List<OrderItem> orderItems, String deliveryAddress, String deliveryHp, String deliveryName){
+		this.orderId = orderId;
 		this.orderItems = orderItems;
 		this.deliveryAddress = deliveryAddress;
 		this.deliveryHp = deliveryHp;

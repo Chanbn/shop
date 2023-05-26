@@ -9,9 +9,13 @@ import org.springframework.transaction.annotation.Transactional;
 import com.board.domain.cart.repository.CartRepository;
 import com.board.domain.cartitem.repository.CartItemRepository;
 import com.board.domain.cartitem.service.CartItemServiceImpl;
+import com.board.domain.item.Item;
+import com.board.domain.item.exception.ItemException;
+import com.board.domain.item.exception.ItemExceptionType;
 import com.board.domain.item.repository.ItemRepository;
 import com.board.domain.member.repository.MemberRepository;
 import com.board.domain.order.Order;
+import com.board.domain.order.OrderItem;
 import com.board.domain.order.exception.OrderException;
 import com.board.domain.order.exception.OrderExceptionType;
 import com.board.domain.order.repository.OrderRepository;
@@ -29,10 +33,13 @@ import lombok.extern.slf4j.Slf4j;
 public class OrderStateServiceImpl implements OrderStateService {
 	private final OrderRepository orderRepository;
 	private final OrderStateRepository orderStateRepository;
+	private final ItemRepository itemRepository;
 	@Override
 	public OrderState OrderReceived(Long orderId) {
 		// TODO Auto-generated method stub
 		Order order = orderRepository.findById(orderId).orElseThrow(()->new OrderException(OrderExceptionType.WRONG_ORDER));
+
+		
 		OrderState orderState = OrderState.builder().progressDate(LocalDateTime.now()).order(order).state(State.OrderReceived).build();
 		orderStateRepository.save(orderState);
 		return orderState;
@@ -42,6 +49,17 @@ public class OrderStateServiceImpl implements OrderStateService {
 	public OrderState PaymentCompleted(Long orderId) {
 		// TODO Auto-generated method stub
 		Order order = orderRepository.findById(orderId).orElseThrow(()->new OrderException(OrderExceptionType.WRONG_ORDER));
+		
+		
+		List<OrderItem> orderItemList = order.getOrderItems();
+		
+		for(OrderItem orderList : orderItemList) {
+			Long itemId = orderList.getItem().getId();
+			Long count = orderList.getCount();
+			Item item =  itemRepository.findById(itemId).orElseThrow(()->new ItemException(ItemExceptionType.WRONG_ITEM));
+			orderList.removeItemStock(item, count);
+		}
+		
 		OrderState orderState = OrderState.builder().progressDate(LocalDateTime.now()).order(order).state(State.PaymentCompleted).build();
 		orderStateRepository.save(orderState);
 		return orderState;

@@ -55,8 +55,12 @@ public class OrderItem {
         orderItem.setOrderPrice(item.getPrice()); 
         orderItem.setFileName(item.getFileLists().get(0).getSaveName());
         orderItem.setCreatedDate(item.getFileLists().get(0).getCreatedDate());
-        item.removeStock(count);
+//      item.removeStock(count);
 
         return orderItem;
+    }
+    
+    public void removeItemStock(Item item,Long count) {
+    	item.removeStock(count);
     }
 }

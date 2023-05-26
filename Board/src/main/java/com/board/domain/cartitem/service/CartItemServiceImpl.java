@@ -47,8 +47,12 @@ public class CartItemServiceImpl implements CartItemService {
 																Cart newCart = Cart.createCart(member);
 																cartRepository.save(newCart);
 																return newCart;});
-		CartItem cartitem = CartItem.builder().cart(cart).item(item).count(count).build();
-
+		CartItem savedItem = cartItemRepository.findByItemIdAndCartId(itemId,cart.getId());
+		if(savedItem!=null) {
+			savedItem.addCount(count);
+			return savedItem;
+		}
+		CartItem cartitem = CartItem.builder().cart(cart).item(item).count(count).build();			
 		
 		return cartItemRepository.save(cartitem);
 	}

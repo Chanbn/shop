@@ -2,6 +2,8 @@ package com.board.domain.order.dto;
 
 import java.time.LocalDateTime;
 
+import com.board.domain.order.Order;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,7 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 public class OrderInfo {
 
-	private Long id;
+	private Long itemId;
 	private String itemname;
 	private Long price;
 	private Long count;
@@ -19,8 +21,8 @@ public class OrderInfo {
 	private String createdDate;
 	private Long stock;
 	
-	public OrderInfo(Long id, String itemname, Long price, Long count, String fileName, String createdDate, Long stock) {
-		this.id = id;
+	public OrderInfo(Long itemId, String itemname, Long price, Long count, String fileName, String createdDate, Long stock) {
+		this.itemId = itemId;
 		this.itemname = itemname;
 		this.price = price;
 		this.count = count;

@@ -55,7 +55,7 @@
             <option th:each="option : ${#numbers.sequence(1, item.stock)}" th:value="${option}" th:text="${option}"></option>
         </select>
 	<button type="button" onclick="addCartItem()">장바구니에 담기</button>
-	<input type="hidden" name="id" id="id" th:value="${item.id}">	
+	<input type="hidden" name="itemId" id="itemId" th:value="${item.id}">	
 		<input type="hidden" name="itemname" id="itemname" th:value="${item.itemname}">	
 	<input type="hidden" name="price" id="price" th:value="${item.price}">
 		<input type="hidden" name="fileName" id="fileName" th:value="${item.fileLists[0].saveName}">
@@ -145,13 +145,13 @@ function goBack(){
 
 function addCartItem(){
 	var ItemId = parseInt([[${item.id}]]);
-	var quantity = $("#quantity").val();
+	var count = $("#count").val();
 	$.ajax({
 		method: "POST",
 		url:"/cartItem/add",
 		data:{
 			ItemId : ItemId,
-			count : quantity
+			count : count
 		},
 		success: function(data){
 			alert(data);
@@ -166,7 +166,7 @@ function addCartItem(){
 
 function orderItem(){
 	var ItemId = parseInt([[${item.id}]]);
-	var count = $("#quantity").val();
+	var count = $("#count").val();
 	var ItemPrice = parseInt([[${item.price}]]);
 	var ItemName = [[${item.itemname}]];
 	

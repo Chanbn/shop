@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+	<meta name="_csrf" th:content="${_csrf.token}"/>
+	<!-- default header name is X-CSRF-TOKEN -->
+	<meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+	<!-- ... -->
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div th:replace="/fragments/header.html :: fragment-header"></div>
+  <div th:replace="/fragments/nav.html :: fragment-nav"></div>
+<h1 sec:authorize="!hasRole('user')">You do not have user role.</h1>
+<h1 sec:authorize="hasRole('user')">Has admin Role</h1>
+
+<body>
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+    
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+
+<table>
+    <thead>
+        <tr>
+            <th>주문번호</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:if="${orderList != null}" th:each="orderListDto : ${orderList}">
+            <td><span th:text="${orderListDto.orderId}"></span></td>
+            <td>
+                <table>
+                
+                <thead>
+                <tr>
+            <th>상품번호</th>
+            <th>이미지</th>
+            <th>상품명</th>
+            <th>주문가격</th>
+            <th>주문수량</th>
+                </tr>
+                </thead>
+                
+                <tbody>
+                    <tr th:each="orderItem : ${orderListDto.myOrder}">
+                        <td><span th:text="${orderItem.itemId}"></span></td>
+                        <td>
+                            <a th:href="@{'/shop/get?id=' + ${orderItem.itemId}}">
+                                <img class="order-image" th:src="@{'/shop/getImage/' + ${orderItem.fileName} + '?uploadDate=' + ${orderItem.fileCreatedDate}}" alt="Image" width="100" height="100" />
+                            </a>
+                        </td>
+                        <td><span th:text="${orderItem.itemName}"></span></td>
+                        <td><span th:text="${orderItem.price}"></span></td>
+                        <td><span th:text="${orderItem.count}"></span></td>
+                    </tr>
+                   </tbody>
+                </table>
+            </td>
+            <td>
+            <span th:text="${orderListDto.amount}"></span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+</body>
+
+
+<script th:inline="javascript">
+
+</script>
+</html>

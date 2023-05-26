@@ -26,12 +26,18 @@ import org.springframework.web.servlet.ModelAndView;
 import com.board.domain.address.Address;
 import com.board.domain.item.dto.ItemInfoDto;
 import com.board.domain.item.service.ItemService;
+import com.board.domain.member.Member;
+import com.board.domain.member.dto.MemberInfoDto;
+import com.board.domain.member.repository.MemberRepository;
+import com.board.domain.member.service.MemberService;
 import com.board.domain.order.Order;
 import com.board.domain.order.dto.OrderDto;
 import com.board.domain.order.dto.OrderInfo;
 import com.board.domain.order.dto.OrderItemDto;
 import com.board.domain.order.dto.AddressDto;
-import com.board.domain.order.dto.OderCartDto;
+import com.board.domain.order.dto.MyOrderDto;
+import com.board.domain.order.dto.MyOrderListDto;
+import com.board.domain.order.dto.OrderCartDto;
 import com.board.domain.order.dto.OrderRequestDto;
 import com.board.domain.order.dto.OrderResultDto;
 import com.board.domain.order.service.OrderService;
@@ -39,6 +45,7 @@ import com.board.domain.orderstate.OrderState;
 import com.board.domain.orderstate.service.OrderStateService;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.nimbusds.openid.connect.sdk.claims.UserInfo;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -52,6 +59,7 @@ public class OrderController {
 	private final OrderStateService orderStateService;
 	private final OrderService orderService;
 	private final ItemService itemService;
+	private final MemberService memberService;
 	
 	@GetMapping("/list")
 	public ResponseEntity<List<OrderState>> getList(@RequestParam("orderId") Long orderId){
@@ -61,19 +69,19 @@ public class OrderController {
 
 	@GetMapping("/form")
 	public void getForm(Model model,@ModelAttribute("orderInfo") OrderInfo orderInfo){
-		ItemInfoDto itemInfoDto = itemService.getInfo(orderInfo.getId());
+		ItemInfoDto itemInfoDto = itemService.getInfo(orderInfo.getItemId());
 		model.addAttribute("orderInfo", orderInfo);
 		model.addAttribute("item",itemInfoDto);
 	}
-	
+	 
 	
     @PostMapping("/form")
-    public String processForm(Model model, OderCartDto orderInfo) {
+    public String processForm(Model model, OrderCartDto orderInfo) {
     	List<OrderInfo> orderInfoList=orderInfo.getOrderInfo(); 
-    	log.info("길이 "+orderInfoList.get(0).getId());
+    	log.info("길이 "+orderInfoList.get(0).getItemId());
 		List<ItemInfoDto> itemInfoDto = new ArrayList<>();
 		for(OrderInfo info : orderInfoList) {
-			ItemInfoDto itemInfo = itemService.getInfo(info.getId());
+			ItemInfoDto itemInfo = itemService.getInfo(info.getItemId());
 			itemInfoDto.add(itemInfo);
 		}
 
@@ -106,5 +114,13 @@ public class OrderController {
     	model.addAttribute("order", order);
     	model.addAttribute("totalPrice",totalPrice);
         return "order/result";
+    } 
+    
+    @GetMapping("/myList")
+    public void myList(Model model) {
+    	String username = SecurityContextHolder.getContext().getAuthentication().getName();
+    	List<MyOrderListDto> orderList=orderService.myOrderList(username);
+
+    	model.addAttribute("orderList", orderList);
     } 
 }
